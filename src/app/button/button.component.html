@@ -1,0 +1,7 @@
+<button class="btn" type="button"
+  [ngClass]="{
+    'btn-primary red-button' : btnText[0].redbtn,
+    'btn-default btn-custom text-uppercase' : !btnText[0].redbtn
+  }"
+  (click)="gotoSingle()"
+>{{btnText[0].title}}</button>

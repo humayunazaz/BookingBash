@@ -1,0 +1,21 @@
+<sebm-google-map
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="zoom"
+  [scrollwheel]='scrollwheel'
+  >
+  <sebm-google-map-marker
+      *ngFor="let m of mapContent; let i = index"
+      [latitude]="m.location.lat"
+      [longitude]="m.location.lng"
+      [label]="m.title"
+      [title]="m.title"
+      >
+    <sebm-google-map-info-window>
+      <div class="info_content">
+        <h3>{{m.title}}</h3>
+        <p>{{m.content}}</p>
+      </div>
+    </sebm-google-map-info-window>
+  </sebm-google-map-marker>
+</sebm-google-map>

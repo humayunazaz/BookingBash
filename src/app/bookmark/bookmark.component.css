@@ -1,0 +1,6 @@
+.pending{
+  pointer-events: none;
+}
+i{
+  cursor: pointer;
+}

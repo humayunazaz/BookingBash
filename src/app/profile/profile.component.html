@@ -1,0 +1,27 @@
+<section class="bg-dark-grey user-profile" id="main-content">
+  <div class="col-sm-12 padding20 grey-bg" style="padding-top: 70px">
+    <bs-loader [isLoading]='loading' [error]='error'></bs-loader>
+    <div class="movie-here" *ngFor="let Smovie of content">
+        <div class="latest-movies-slide hover-effect">
+          <bs-movie
+          [Smovie]='Smovie'
+          [profileView]="profileView"
+          (profile)="gotoSingle($event)"
+          >
+          </bs-movie>
+        </div>
+    </div>
+  </div>
+</section>
+<bs-other></bs-other>
+<bs-footer></bs-footer>
+<activity-modal
+[modelId]='modelId'
+[modalContent]='modalContent'
+[modalGallery]='modalGallery'
+[modelTitle]='modelTitle'
+[modelImg]='modelImg'
+[isLoading]='loading'
+[error]='error'
+[profileView]='profileView'
+></activity-modal>

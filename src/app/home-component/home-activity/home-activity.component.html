@@ -1,0 +1,9 @@
+<section class="grey-bg" id="activities">
+  <div class="container">
+    <section-head [head]='head' [icon]='icon'></section-head>
+    <bs-activity [url]='url' [modelId]="modelId" [singleUrl]='singleUrl' (singlePage)="goto($event)"></bs-activity>
+    <div class="col-sm-12 text-center">
+      <bs-button [btnText]='btnText' [routerValue]="router"></bs-button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<footer>
+  <div class="container" id="footer">
+    <div class="col-sm-4 footer-logo">
+        <img src="../../assets/images/footer-logo.png" class="img-responsive">
+    </div>
+    <div class="col-sm-4 social-icon">
+        <div class="middle-icons">
+          <div class="icons" *ngFor="let icon of icons">
+            <i class="fa {{icon}}">
+            </i>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-4 text-right copy-write">
+        <p>&copy; {{footerText}}</p>
+    </div>
+  </div>
+</footer>

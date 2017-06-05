@@ -1,0 +1,14 @@
+.main-content{
+  margin: auto;
+  width: 550px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  float: none;
+}
+.login-form{
+  float: left;
+  width: 100%;
+}
+.login-form h3{
+  color: #333;
+}

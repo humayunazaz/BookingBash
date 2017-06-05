@@ -1,0 +1,9 @@
+<div class="col-sm-12 trailors padding0">
+  <section-head [head]='head' [icon]='icon'></section-head>
+  <div *ngFor="let trailor of trailorsImgs">
+    <div class="video-place" (click)="open(trailor)" data-toggle="modal" [attr.data-target]="'#' + trailorId">
+      <img src="{{trailor.Thumb}}"/>
+      <img class="play" src="../../../assets/images/play.png">
+    </div>
+  </div>
+</div>

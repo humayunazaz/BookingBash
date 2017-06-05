@@ -1,0 +1,11 @@
+.loader{
+  min-height: 450px;
+  text-align: center;
+}
+i{
+  color: #c70000;
+  padding: 220px 20px;
+}
+.loader h4{
+  padding-top: 230px;
+}

@@ -1,0 +1,30 @@
+<header>
+  <div class="col-sm-7 logo-img-place">
+      <div class="logo" (click)="gotoHome()"><img class="img-responsive logo-img" src="../../assets/images/logo.png"></div>
+  </div>
+  <div class="col-sm-5 search-signin">
+    <div class="pull-right">
+        <div class="col-sm-9 padrightzero">
+            <div class="input-group">
+              <auto-comp></auto-comp>
+              <span class="input-group-btn">
+                <bs-button [btnText]='btnText'></bs-button>
+              </span>
+            </div>
+        </div>
+        <div class="col-sm-3 login-btn text-center padrightzero" *ngIf="!username">
+          <img class="img-responsive" src="../../assets/images/login-btn.png">
+          <p class="sign-up-text">
+            <a data-toggle="modal" data-target="#signup-popup" (click)="openModal('login')">Login</a>
+            /
+            <a data-toggle="modal" data-target="#signup-popup" (click)="openModal('signup')">Sign Up</a>
+          </p>
+        </div>
+        <div *ngIf="username" class="col-sm-3 user-name text-center padrightzero">
+          <p (click)="gotoProfile()">{{username}}</p>
+          <a (click)="signout()" style="cursor: pointer">Sign Out</a>
+        </div>
+    </div>
+  </div>
+</header>
+<sign-up [signUp]='signUp' [login]='login'></sign-up>

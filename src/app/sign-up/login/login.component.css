@@ -1,0 +1,33 @@
+.error-here{
+  float: left;
+  width: 100%;
+}
+.recover-email{
+  float: left;
+  width: 100%;
+}
+.recoveryMessage{
+  float: left;
+  width: 100%;
+}
+.recoveryMessage p{
+  text-align: center;
+  font-weight: 700;
+}
+.forgot-password p{
+  cursor: pointer;
+}
+.social-button{
+  width: 50%;
+}
+.facebook-button{
+  text-align: center;
+}
+@media (max-width: 479px) and (min-width: 320px){
+  .social-login{
+    width: 100%;
+  }
+  .social-button{
+    text-align: center;
+  }
+}

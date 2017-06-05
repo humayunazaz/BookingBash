@@ -1,0 +1,18 @@
+<img src="{{activity.thumbnail_images.full.url}}" class="img-responsive">
+<div class="single-club-information">
+    <div class="pull-left">
+        <h4 class="text-capitalize">{{activity.title}}</h4>
+        <p>{{activity.custom_fields.location}}</p>
+        <p>{{activity.custom_fields.genre}}</p>
+    </div>
+    <div class="pull-right">
+        <div class="single-club-button text-center">
+            <button class="btn btn-default text-capitalize btn-custom" data-toggle='modal' [attr.data-target]="'#' + modelId" (click)='openModel(activity)'>Information</button>
+        </div>
+        <div class="single-club-button text-right bs-icons" style="float: right">
+          <bookmark [content]='activity'></bookmark>
+          <sharer [id]='activity.slug' [share]='facebook'></sharer>
+          <sharer [id]='activity.slug' [content]='activity' [share]='twitter'></sharer>
+        </div>
+    </div>
+</div>

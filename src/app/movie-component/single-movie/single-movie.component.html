@@ -1,0 +1,89 @@
+<div (click)="clicked()">
+<section class="movie-portion float-width">
+    <div class="container">
+        <bs-loader [isLoading]='isLoading' [error]='error'></bs-loader>
+        <div *ngIf="!isLoading && !error" class="movie_trailer" (click)="open_popup()" data-toggle="modal" [attr.data-target]="'#' + modelId">
+            <img class="trailer_thumb" src="{{trailorThumb}}" width="100%"/>
+            <img class="play" src="../../../assets/images/play.png">
+        </div>
+        <button type="button" class="btn btn-primary model-button" data-toggle="modal" data-target="#showtimings" (click)='movieTiming()'>Show Time</button>
+        <!-- Modal -->
+    </div>
+</section>
+<section class="movies-detail float-width">
+    <div class="container">
+        <bs-loader [isLoading]='isLoading' [error]='error'></bs-loader>
+        <div class="moives-col float-width" *ngIf="!isLoading && !error">
+            <div class="col-sm-3 single-movie-cast">
+                <div class="movie-side-img">
+                    <img src="{{singleMovie.custom_fields.poster}}" style="width: 230px; height: 305px" class="img-responsive" alt="" />
+                </div>
+                <div class="movie-detail-slider">
+                    <div class="movie-slider-title">
+                        <h3>Cast</h3>
+                    </div>
+                    <cast-slider [content]='castContent'></cast-slider>
+                    <!-- .carousel -->
+                </div>
+            </div>
+            <div class="col-sm-9 single-movie-detail">
+                <div class="movie-content">
+                    <div class="top-content">
+                        <h2>{{singleMovie.title}}</h2>
+                        <div class="bookmark-icons">
+                            <!-- <i class="fa fa-heart bookmark" [ngStyle]="{'display': userId && (!likeIds || LikeCheck == false) ? 'block' : 'none'}" (click)="like(moviedetail[10])"></i> -->
+                            <!-- <i class="fa fa-heart un-bookmark" [ngStyle]="{'display': userId && (likeIds && likeCheck == true) ? 'block' : 'none'}" (click)="unlike(moviedetail[10])"></i> -->
+                        </div>
+                        <div class="release-date">
+                            <p>
+                                <br> Rating: {{singleMovie.custom_fields.rated}}</p>
+                        </div>
+                        <div class="movie-list-detail">
+                            <ul style="list-style-type: none">
+                                <li><b>Year</b> {{movieYear}}</li>
+                                <li><b>Director</b> {{singleMovie.custom_fields.director}}</li>
+                                <li><b>Genre</b> {{singleMovie.custom_fields.genre}}</li>
+                                <li><b>Time</b> {{singleMovie.custom_fields.duration}} min</li>
+                                <li><b>Rating</b>
+                                  <div class="rating-star"
+
+                                  >
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                  </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom-content">
+                        <h3>Story line</h3>
+                        <p>{{movieDesc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="whats-happen float-width">
+    <h2>WHATS HAPPENING</h2>
+    <bs-loader [isLoading]='eventLoading' [error]='eventError'></bs-loader>
+    <div class="happen-col-area float-width" *ngIf="!eventError && !eventLoading">
+        <div class="col-sm-4" *ngFor="let event of eventContent">
+            <div class="happen-detail">
+                <div class="happen-img">
+                    <img src="{{event.thumbnail_images.full.url}}" class="img-responsive" alt="" />
+                </div>
+                <div class="img-link">
+                    <a (click)="gotoevents()">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<bs-other></bs-other>
+<bs-footer></bs-footer>
+<movie-timing [movieContent]='movieContent' [loading]='timingLoading' [title]='movieTitle' [id]="cinemaId"></movie-timing>
+</div>

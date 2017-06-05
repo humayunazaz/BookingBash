@@ -1,0 +1,55 @@
+<div class="modal fade detail-pop-up center-modal activity-modal" id="{{modelId}}" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="col-sm-12 closing-modal">
+                  <div class="close-modal">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                </div>
+                <bs-loader [isLoading]='isLoading' [error]='error'></bs-loader>
+                <div class="col-sm-12 select-event-here" *ngIf='!isLoading && !error'>
+                    <div class="col-sm-7 select-event-image">
+                        <img src="{{modelImg}}" class="img-responsive">
+                    </div>
+                    <div class="col-sm-4 select-event-content">
+                        <div class="select-event-description">
+                            <div class="col-sm-12 padding0">
+                                <h3 class="text-uppercase">{{modelTitle}}</h3>
+                                <p [innerHTML]="modalContent" class="model-decs"></p>
+                            </div>
+                        </div>
+                        <div class="select-event-image-gallery">
+                            <p class="text-capitalize">Activity Gallery</p>
+                            <div *ngIf="modalGallery.length > 0">
+                              <div class="col-sm-3 select-event-simage" *ngFor="let gallery of modalGallery;  let i=index">
+                                  <div *ngIf="i < 8">
+                                      <img src="{{gallery}}" class="img-responsive" (click)="updateImage(gallery)">
+                                  </div>
+                              </div>
+                              <div class="col-sm-3 select-event-simage event-second-row" *ngFor="let gallery of modalGallery; let i=index">
+                                  <div *ngIf="i > 7 && i < 16">
+                                      <img src="{{gallery}}" class="img-responsive" (click)="updateImage(gallery)">
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="!profileView">
+                  <div class="prev-event navigated"
+                  [ngClass]='{
+                    disabled: prevId == undefined
+                  }'>
+                      <i class="fa fa-angle-left" (click)="gotoNew(prevId)"></i>
+                  </div>
+                  <div class="next-event navigated"
+                  [ngClass]='{
+                    disabled: nextId == undefined
+                  }'>
+                      <i class="fa fa-angle-right" (click)="gotoNew(nextId)"></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

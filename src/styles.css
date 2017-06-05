@@ -1,0 +1,4267 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+section {
+    padding: 30px 0px;
+}
+header {
+    height: 78px;
+    padding: 5px 20px;
+    position: relative;
+}
+.logo {
+    float: left;
+}
+.select-event-description .model-decs ol{
+  float: left;
+}
+.logo img{
+  cursor: pointer;
+}
+.main-loader{
+  width: 100%;
+  text-align: center;
+}
+.main-loader i{
+  color: #c70000;
+  margin-top: 320px;
+}
+.btn-primary {
+    background-color: #ed1c24;
+    border-color: #ed1c24;
+}
+.btn-primary:active:hover, .btn-primary:hover {
+    background-color: rgb(218, 11, 11);
+    border-color: rgb(218, 11, 11);
+}
+.login-btn img {
+    width: 30px;
+    display: inline-block;
+}
+.login-btn p{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.sebm-google-map-container-inner{
+  margin-bottom: 20px;
+}
+#main-content .loader h4{
+  color: #333;
+}
+.login-btn .sign-up-text{
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.search-signin {
+    padding: 13px 0px;
+}
+.search-signin .pull-right{
+  width:100%;
+}
+.search-result{
+  position: absolute;
+  height: auto;
+  max-height: 250px;
+  width: 337px;
+  z-index: 999;
+  background: #fff;
+  top: 100%;
+  overflow-x: auto;
+}
+.search-result ul{
+  padding: 10px;
+  margin: 0;
+}
+.search-result ul li{
+  list-style-type: none;
+  padding: 10px;
+  font-size: 16px;
+  padding-bottom: 0;
+}
+.search-result ul li a{
+    cursor: pointer;
+}
+.padrightzero {
+    padding-right: 0;
+}
+#slider {
+    padding: 0;
+}
+.movies-slide {
+    float: left;
+    position: relative;
+}
+.movies-slide:first-child {
+    width: 65%;
+    height: 515px;
+}
+.movies-slide:nth-child(2) {
+    width: 35%;
+    height: 257.5px;
+}
+.movies-slide:nth-child(3) {
+    width: 35%;
+    height: 257.5px;
+}
+.movies-slide img {
+    width: 100%;
+    height: 100%;
+}
+#slider .carousel-control {
+    width: 30px;
+    opacity: 1;
+    background-image: none;
+    top: 50%;
+    bottom: auto;
+    z-index: 3;
+}
+#slider .carousel-control span {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+}
+#slider .carousel-control.right {
+    right: 30px;
+}
+.movies-slide-caption {
+    position: absolute;
+    bottom: 0;
+    padding: 18px 25px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    float: left;
+    z-index: 2;
+    height: 80px;
+}
+.movies-slide-caption .pull-left{
+  width: 80%;
+}
+
+.movies-slide-caption h4, .movies-slide-caption h5 {
+    margin-top: 0;
+    cursor: pointer;
+}
+.movies-slide-caption h5 {
+    margin-bottom: 0;
+}
+.black-overlay {
+    background-color: rgba(0, 0, 0, 0.20);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.movies-slide-rating {
+    position: relative;
+    height: 45px;
+    width: 52px;
+}
+.movies-slide-rating span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.movies-slide-rating span i {
+    color: #ffd900;
+    margin-right: 5px;
+}
+.menu {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 0;
+    border: none;
+    min-height: 0;
+}
+.menu .navbar-nav {
+    text-align: center;
+    padding: 15px 0 0 0;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    float: none;
+    border-bottom: 5px solid #ED1C24;
+}
+.menu .navbar-nav>li {
+    display: inline-block;
+    float: none;
+}
+.menu .navbar-nav>li>a {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px 5px 20px;
+    font-size: 16px;
+}
+.menu .navbar-collapse {
+    text-align: center;
+}
+.menu .navbar-nav>.active>a, .menu .navbar-nav>.active>a:focus, .menu .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover {
+    color: #FFF;
+    background-color: #ED1C24;
+}
+.navigation-here{
+  cursor: pointer;
+}
+#movies .container, #events .container{
+    width: 1153px;
+}
+#movies .latest, #events .latest{
+    width: 1153px;
+}
+.section-heading {
+    border-bottom: 1px solid #a1a1a1;
+    padding-bottom: 10px;
+    color: #ed1c24;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.section-heading i {
+    margin-right: 10px;
+}
+.view-all {
+    color: #333333;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+}
+.view-all a {
+    color: inherit;
+    cursor: pointer;
+}
+.view-all i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+a:hover {
+    text-decoration: none;
+}
+.grey-bg {
+    background-color: #ecebeb;
+}
+.movies-tabs {
+    margin: 30px 0;
+}
+.movies-tabs .nav-tabs {
+    border: none;
+    margin-bottom: 15px;
+}
+.movies-tabs .nav-tabs>li {
+    margin-right: 30px;
+}
+.movies-tabs .nav-tabs>li>a {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #333333;
+}
+.movies-tabs .nav-tabs>li.active>a, .movies-tabs .nav-tabs>li.active>a:focus, .movies-tabs .nav-tabs>li.active>a:hover {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ed1c24;
+}
+.movies-tabs .nav-tabs>li>a:hover {
+    color: #ed1c24;
+}
+.movies-carousel .owl-controls, .events-carousel .owl-controls {
+    position: absolute;
+    right: 0;
+    top: -45px;
+}
+.movies-carousel .owl-dots, .events-carousel .owl-dots {
+    display: none;
+}
+.movies-carousel .owl-next, .events-carousel .owl-next {
+    margin-left: 10px;
+}
+.movies-carousel .owl-next, .movies-carousel .owl-prev, .events-carousel .owl-next, .events-carousel .owl-prev {
+    float: left;
+    font-size: 26px;
+}
+.btn-custom {
+    font-weight: bold;
+    font-size: 24px;
+    border-color: #ed1c24;
+    background-color: transparent;
+    padding: 6px 40px;
+}
+.movie-description {
+    margin: 10px;
+    padding: 35px 15px;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.movie-description {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+    padding: 30px 15px;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    height: 93.5%;
+    width: 92%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.9);
+    left:1%;
+}
+.hover-effect{
+  position: relative;
+}
+.movies-carousel .hover-effect:hover .movie-description, .events-carousel .hover-effect:hover .movie-description {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;;
+    transition: all 0.5s ease-in-out;;
+
+}
+.movie-desc-icons i {
+    margin: 0 5px;
+    font-size: 16px;
+}
+i.bookmark{
+    color: #fff;
+}
+i.un-bookmark{
+    color: #FFD700;
+    cursor: pointer;
+}
+.movie-desc-icons {
+    margin-bottom: 5px;
+}
+.movie-desc-rating i {
+    color: #ffd900;
+}
+.movie-desc-genre, .movie-desc-cast, .movie-desc-plot {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.movie-desc-view .btn-primary {
+    padding: 2px 20px;
+}
+.movies-carousel .owl-item img {
+    max-height: 305px;
+}
+/* Event slider image control */
+#events .owl-carousel .owl-item img{
+    width: 235px;
+    height: 300px;
+}
+#events .owl-carousel .owl-item:nth-child(6) img{
+    width: 685px;
+    height: 300px;
+}
+#events .owl-carousel .owl-item:nth-child(9) img{
+    width: 685px;
+    height: 300px;
+}
+#events .owl-carousel .owl-item:nth-child(12) img{
+    width: 685px;
+    height: 300px;
+}
+/* Activities section styling */
+#activities .movie-description, #nightlife .movie-description{
+    width: 95%;
+    padding: 70px 40px;
+}
+#activities .movie-description .movie-desc-icons i, #nightlife .movie-description .movie-desc-icons i{
+    margin: 0 15px;
+    font-size: 18px;
+}
+#activities .movie-description .movie-desc-view .btn-primary, #nightlife .movie-description .movie-desc-view .btn-primary{
+    padding: 5px 25px;
+    margin-top: 10px;
+}
+#nightlife .movie-description h3:nth-child(1){
+    margin-bottom: 5px;
+}
+#nightlife .movie-description h3:nth-child(2){
+    margin-top: 0px;
+}
+.padding0{
+    padding:0px;
+}
+.padleft0{
+    padding-left:0px;
+}
+.padright0{
+    padding-right:0px;
+}
+.martop30{
+    margin-top: 30px;
+}
+.marbot30{
+    margin-bottom: 30px;
+}
+.activity img{
+  width: 555px;
+  height: 290px;
+}
+.activity:hover .movie-description, .movie-description:hover{
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.width405{
+    width: 405px;
+}
+/* Video section styling */
+.profile-vid{
+    position: relative;
+    height: 455px;
+    overflow: hidden;
+    background:#000;
+    text-align: center;
+    cursor: pointer;
+}
+.profile-vid .wide-img{
+    width: 100%;
+}
+.profile-vid .vid-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    opacity: 1;
+}
+.vid-overlay .vid-play-btn{
+    font-size: 80px;
+    color: #ffffff;
+    position: absolute;
+    top: 37%;
+}
+#video{
+    padding: 80px;
+}
+/* Subscribe section styling */
+#subscribe .container{
+    width: 850px;
+}
+.padtopbot50{
+    padding:50px 0px;
+}
+.subscribe-text p{
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.subscribe-text .input-group{
+    padding: 20px;
+}
+.padding20{
+    padding: 20px;
+}
+.subscribe-image img{
+    margin-top: 50px;
+}
+.subscribe-text .input-group-btn .btn-primary{
+    padding: 6px 30px;
+}
+#other-services{
+    background-color:#7b7b7b;
+    float: left;
+    width: 100%;
+}
+#other-services .container{
+    width: 740px;
+}
+#other-services a{
+    color:#fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.marbot20{
+    margin-bottom: 20px;
+}
+.marright5{
+    margin-right: 5px;
+}
+/* Footer styling */
+#footer{
+    float: left;
+    width: 100%;
+}
+footer .container{
+    background:#000;
+    width: 1349px;
+    padding: 15px 20px;
+}
+.social-icon .icons{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 20px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.social-icon .icons:nth-child(1) i{
+    margin-left: 4px;
+}
+.social-icon .icons:nth-child(4) i{
+    margin-left: 9px;
+}
+.social-icon .icons:nth-child(5) i{
+    margin-left: 9px;
+}
+.social-icon .icons i{
+    font-size: 20px;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #ed1c24;
+}
+.middle-icons{
+    padding-left:60px;
+}
+.copy-write p{
+    color: #fff;
+    margin-top: 10px;
+}
+/*Movie carousel style */
+.hover-effect{
+    position: relative;
+}
+.latest-movies-slide{
+    width: 230px;
+    float: left;
+}
+.latest-movies-slide img{
+  width: 230px;
+  height: 305px;
+}
+.latest-movie .hover-effect:hover .movie-description{
+    opacity: 1;
+}
+.latest-movie .latest-left-icon, .latest-movie .latest-right-icon{
+    height: 25px;
+    width: 15px;
+    position: absolute;
+    top: -40px;
+    background: inherit;
+    opacity: 1;
+    background-image: none;
+    text-shadow:none;
+}
+.latest-left-icon{
+    left: 97%;
+}
+.latest-left-icon span, .latest-right-icon span{
+    color: #000;
+    font-size: 28px;
+}
+/*Event Carousel style */
+.event .item .latest-movies-slide:nth-child(1), .event .item .latest-movies-slide:nth-child(4), .event .item .latest-movies-slide:nth-child(7), .event .item .latest-movies-slide:nth-child(10){
+    width:685px;
+}
+.event .item .latest-movies-slide:nth-child(1) img, .event .item .latest-movies-slide:nth-child(4) img, .event .item .latest-movies-slide:nth-child(7) img, .event .item .latest-movies-slide:nth-child(10) img{
+    width:685px;
+}
+/*Movies Page filter styling */
+/* Movie first slider style*/
+.movie-first-carousel .movie-slider-item:nth-child(1) .movies-slides, .movie-first-carousel .movie-slider-item:nth-child(4) .movies-slides, .movie-first-carousel .movie-slider-item:nth-child(7) .movies-slides{
+  width: 65%;
+  height: 515px;
+  position: relative;
+}
+.movie-first-carousel .movie-slider-item:nth-child(1) .movies-slides .black-overlay, .movie-first-carousel .movie-slider-item:nth-child(4) .movies-slides .black-overlay, .movie-first-carousel .movie-slider-item:nth-child(7) .movies-slides .black-overlay{
+  width: 100%;
+}
+.movie-first-carousel .movie-slider-item:nth-child(1) .movies-slides img, .movie-first-carousel .movie-slider-item:nth-child(4) .movies-slides img, .movie-first-carousel .movie-slider-item:nth-child(7) .movies-slides img{
+  width: 100%;
+  height: 100%;
+}
+.movie-first-carousel .movie-slider-item .movies-slides{
+  width: 35%;
+  height: 257.5px;
+  position: relative;
+  float: left;
+}
+.movie-first-carousel .movie-slider-item .movies-slides img{
+  width: 100%;
+  height: 100%;
+}
+.padding20{
+    padding: 20px;
+}
+.bg-dark-grey{
+    background: #333333;
+    color: #fff;
+}
+#main-content{
+    padding: 0;
+}
+#main-content .container{
+    width: 100%;
+    padding: 0;
+}
+.borbot2fff{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+.filter .form-group{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.filter .input-here{
+    position: relative;
+    padding: 0;
+}
+.filter .input-here input{
+    background: inherit;
+}
+.search-inputs .fa, .genre-display .slide-control .fa, .cinema-display .slide-control .fa{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.movie-desc-icons i.fa{
+  cursor: pointer;
+}
+.genre-display .slide-here p{
+    border: 1px solid #ed1c24;
+    padding: 10px;
+    float: left;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.side-event-outer,
+.side-movie-outer,
+.side-act-outer{
+    height: 80px;
+}
+.genre-display{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.slide-control i{
+    font-size: 20px;
+    display: none;
+}
+.genre-display h4, .genre-display h4 i{
+    float: left;
+}
+/*.slide-here{
+    display: none;
+}*/
+.slide-control{
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.border-here{
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 0px 10px;
+    text-align: center;
+}
+.border-here p:nth-child(1){
+    padding-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+}
+.border-here p{
+    padding-top: 5px;
+    margin-top: 0;
+}
+#main-content .movie-here{
+    margin: 0px 6px;
+    width: 230px;
+    float: left;
+}
+#main-content .latest-movies-slide img{
+    width: 100%;
+}
+.movie-here .border-right{
+    border-right: 1px solid #ccc;
+}
+.bg-white{
+    background: #fff;
+}
+.padding10{
+    padding: 10px;
+}
+.my-movie-margin .select-button button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+}
+.movie-here .movie-each-icon{
+    color: #333;
+}
+/* Trailers */
+.trailers{
+    margin-top:20px;
+}
+.video-place{
+    float: left;
+    margin-top: 20px;
+    margin-right: 7px;
+    margin-left: 7px;
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    height: 100px;
+}
+.video-place img{
+  width: 100%;
+  height: 100%;
+}
+.video-place img.play{
+  width: 50px;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  opacity: 0.9;
+  height: auto;
+}
+.video-place:hover img.play{
+  opacity: 1;
+}
+/* Single Movie Page*/
+.float-width {
+    float: left;
+    width: 100%;
+}
+.main-container{
+    width: 1180px;
+}
+/*-----------padding--------------*/
+.padding-zero{
+    padding: 0;
+}
+.p-l-z{
+    padding-left: 0;
+}
+.p-r-z{
+    padding-right: 0;
+}
+.float-left{
+    float: left;
+}
+.m-r-zero{
+    margin-right: 0 !important;
+}
+/*---------padding-end-----------*/
+
+/*-----------movie-portion-------------*/
+.movie-portion{
+    height: 500px;
+}
+.movie-portion .container{
+  width:100%;
+  padding: 0;
+}
+.movie_trailer{
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
+}
+.movie_trailer:hover img.play{
+  opacity: 1;
+}
+img.trailer_thumb{
+  cursor: pointer;
+  margin-top: -100px;
+}
+.movie-portion img.play{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.9;
+    top: 35%;
+    right: 45%;
+    width: 150px;
+}
+/*---------movie-portion-end-----------*/
+
+/*------------booking-detail------------*/
+/*.movies-detail{
+  //  background-image: url('images/detail-bg.jpg');
+}*/
+.moives-col{
+    margin-bottom: 60px;
+}
+.movie-side-img{
+    margin-top: -175px;
+}
+/*carousel*/
+.thin {
+    max-width:100%;
+}
+.carousel > .window {
+    overflow: hidden;
+    position: relative;
+    height: 490px;
+}
+.carousel ul {
+    list-style: none;
+    height: 10000px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0px;
+    width: 100%;
+}
+
+.clr .item{
+    margin-bottom: 12px;
+    float: left;
+    width: 100%;
+}
+.movies-detail{
+  background-image: url("assets/images/detail-bg.jpg");
+}
+.slider-side-img{
+    width: 50%;
+    float: left;
+    height: 115px;
+}
+.slider-side-img img{
+    height: 100%;
+    width: 100%;
+}
+.person-content{
+    float: left;
+    width: 50%;
+}
+.person-content p{
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 10px;
+    line-height: 21px;
+}
+.slider-data{
+    background-color: #3c3c3c;
+}
+.thin .prev, .thin .next {
+    font-size: 18px;
+    left: 6%;
+    margin-left: -15px;
+    color: #ffffff;
+    background-color: rgba(38, 38, 38, 0.48);
+    top: 24px;
+    z-index: 99999;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+
+}
+.glyphicon-chevron-up,.glyphicon-chevron-down{
+    position: relative;
+    top: 4px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.down-icon {
+    margin-left: -15px;
+    top: -23px !important;
+}
+/*carousel-end*/
+.movie-content{
+    padding: 75px 0 0px 45px;
+}
+.top-content{
+    padding-bottom: 85px;
+}
+.top-content .bookmark-icons{
+    float: right;
+    margin-top: -40px;
+}
+.top-content .bookmark-icons i{
+    font-size: 30px;
+}
+.top-content h2{
+    font-size: 36px;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 18px;
+}
+.release-date{
+    border-left: 1px solid #ed1c24;
+    margin-bottom: 30px;
+}
+.release-date p{
+    font-size: 20px;
+    color: #fff;
+    padding-left: 20px;
+    margin: 0;
+}
+.movie-list-detail ul li{
+    font-size: 16px;
+    color: #d1d1d1;
+    margin-bottom: 12px;
+}
+.movie-list-detail ul li b{
+    width: 90px;
+    float: left;
+}
+/*rating-star*/
+.rating > span:hover:before {
+    content: "\2605";
+    position: absolute;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    color: #ffffff;
+    font-size: 19px;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+/*rating-star-end*/
+h3{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.movie-detail-slider{
+    margin-top: 30px;
+}
+.bottom-content p{
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+/*----------booking-detail-end----------*/
+
+/*------------whats-happen------------*/
+.whats-happen{
+    background-color: #ecebeb;
+}
+.whats-happen{
+    padding: 42px 20px 65px 20px;
+}
+.whats-happen h2{
+    font-size: 24px;
+    color: #333333;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 42px;
+    text-align: center;
+}
+.img-link{
+    background-color: #ed1c24;
+    padding: 20px 0px;
+    text-align: center;
+}
+.img-link a{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 154px;
+    cursor: pointer;
+}
+/*----------whats-happen-end----------*/
+.vertical .carousel-inner {
+  height: auto;
+}
+
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 400px;
+}
+
+.carousel.vertical .prev {
+  top: -400px;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -400px;
+}
+
+.carousel.vertical .active.right {
+  top: 400px;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}
+.slider-data{
+    margin-bottom: 10px;
+}
+#castCarousel .marbot0{
+    margin-bottom: 0;
+}
+.vertical .carousel-inner{
+    position: relative;
+}
+.vertical .top{
+    width: 100%;
+    height: 6%;
+    background: #000;
+}
+.vertical .bottom{
+    width: 100%;
+    height: 6%;
+    position: absolute;
+    top: 94%;
+    background: #000;
+}
+/* Model styling */
+.movie-portion{
+    position: relative;
+}
+.model-button{
+    position: absolute;
+    bottom: 12%;
+    right: 5%;
+}
+.pop-up .modal-dialog{
+    margin-top: 15%;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.8);
+    height: auto;
+    min-height: 450px;
+}
+.pop-up .modal-content{
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 80%;
+    margin: auto;
+}
+.pop-up .modal-header{
+    border-bottom: none;
+}
+.pop-up .modal-header button{
+    opacity: 1;
+}
+.pop-up .modal-header button img{
+    width: 25px;
+}
+.pop-up .modal-body{
+    color: #fff;
+}
+.movie-timings .pull-left{
+    margin-right: 10px;
+    text-align: center;
+    width: 50px;
+}
+.theater-heading{
+    text-align: center;
+    background: #ed1c24;
+    padding: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.theater-heading p{
+    margin-bottom: 0;
+}
+.theater-detail{
+    text-align: center;
+    color: #333;
+}
+.theater-detail p{
+    margin-bottom: 0;
+}
+.theater-name{
+    background: #ddd9d9;
+}
+.movie-timings .pull-left:nth-child(1){
+    margin-left: 10px;
+}
+.theater-name .pull-left{
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+.theater-timing{
+    background: #fff;
+}
+.theater-timing .value-here:nth-child(1){
+    margin-left: 10px;
+}
+.theater-timing .value-here:nth-last-child(1):after{
+    display: none;
+}
+.value-here{
+    float: left;
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+}
+.value-here:before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #ed1c24;
+    border-radius: 10px;
+    display: inline-block;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+.value-here:after{
+    content: '';
+    width: 45px;
+    height: 1px;
+    background-color: #000;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+}
+/* Single Events Page */
+#nightlife-main-content .col-sm-9.white-bg{
+  min-height: 815px;
+}
+.white-bg{
+    background: #fff;
+    color: #000;
+}
+.single-events{
+    margin-top: 20px;
+}
+.single-event-here{
+    margin-bottom: 60px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.single-event{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.single-event-img{
+    position: relative;
+    cursor: pointer;
+}
+.single-event-img img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 155px;
+    width: 100%;
+}
+.single-event-date{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 78px;
+    height: 78px;
+    background: #ed1c24;
+    text-align: center;
+    color: #ecebeb;
+}
+.single-event-date h5{
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.single-event-date h2{
+    margin-top: 0;
+    font-size: 54px;
+    font-weight: 700;
+}
+.single-event-detail{
+    text-align: center;
+    padding: 15px;
+    border-bottom: 3px solid #ccc;
+    height:150px;
+}
+.single-event-detail .bookmark-icons{
+    position: absolute;
+    right: 15px;
+    bottom: 38px;
+}
+.single-event-detail h4{
+    cursor: pointer;
+}
+.single-event-detail i{
+    font-size: 22px;
+}
+.single-event-detail p{
+    margin-top: 5px;
+}
+.single-event-last{
+    background: #ed1c24;
+    height: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+/* Detail Popup */
+.detail-pop-up{
+    width: 75%;
+    left: 25%;
+}
+.detail-pop-up .modal-dialog{
+    margin-top: 10%;
+    width: 100%;
+    float: left;
+}
+.detail-pop-up .modal-content{
+    border-radius: 0;
+    float: left;
+    background: #f1f1f1;
+}
+.detail-pop-up .modal-body{
+    float: left;
+    padding: 20px 0;
+}
+.select-event-image{
+    text-align: center;
+}
+.select-event-image img{
+    display: inline-block;
+    width: 457px;
+    height: 318px;
+}
+.select-event-content{
+    padding:0;
+    border-left: 1px solid #a1a1a1;
+}
+.select-event-description{
+    padding:0 10px 10px;
+    border-bottom: 1px solid #a1a1a1;
+    float: left;
+}
+.select-event-description h3{
+    margin-top: 7px;
+    color: #333;
+    float: left;
+}
+.select-event-description .bookmark-icons{
+    float: right;
+    margin-top: 8px;
+}
+.select-event-description .bookmark-icons i.bookmark,
+.select-event-description .bookmark-icons i.un-bookmark{
+    font-size: 20px;
+}
+.select-event-description p{
+    font-size: 12px;
+    color:#333;
+    float: left;
+}
+.select-event-description .btn-custom{
+    font-size: 14px;
+}
+.select-event-image-gallery{
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+.select-event-image-gallery p{
+    font-weight: 700;
+    padding-left: 8px;
+    color:#333;
+}
+.select-event-simage{
+    padding: 0 8px;
+    min-height: 0;
+}
+.select-event-simage img{
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.select-event-content{
+    position: relative;
+}
+.prev-event{
+    left: 0;
+}
+.next-event{
+    right: 0;
+}
+.navigated{
+    position: absolute;
+    top: 42%;
+    background: #ed1c24;
+    height: 60px;
+    width: 35px;
+}
+.navigated i{
+    font-size: 48px;
+    color: #fff;
+    margin-top: 14%;
+}
+.prev-event i{
+    margin-left: 15%;
+    cursor: pointer;
+}
+.next-event i{
+    margin-left: 35%;
+    cursor: pointer;
+}
+.select-event-button{
+  padding: 0 8px;
+  min-height: 0;
+}
+.select-event-button button{
+    height: 57px;
+    width: 56px;
+    border: none;
+    padding: 0;
+    position: relative;
+    background: #333;
+    color: #fff;
+}
+.select-event-simage button .show-more{
+    position: absolute;
+    top: 15%;
+    color: #fff;
+}
+.event-second-row{
+  display: none;
+}
+/* Nightlife Page Styling */
+.nightlife-slider{
+    position: relative;
+}
+.nightlife-slider .carousel-indicators{
+    margin-bottom: 0;
+}
+.nightlife-slider .carousel-indicators li{
+    background: #e6ded7;
+    border: none;
+    width: 15px;
+    height: 15px;
+}
+.nightlife-slider .carousel-indicators .active{
+    background: #d32020;
+    margin: 1px;
+}
+.nightlife-slider-button{
+    position: absolute;
+    top: 49%;
+    left: 38.3%;
+}
+.nightlife-slider-button button{
+    width: 150px;
+    margin-right: 5px;
+}
+.nightlife-slider .carousel-inner .item .nightlife-slider-img{
+  width:100%;
+  height: 608px;
+}
+.nightlife-search{
+    width: 70%;
+    margin: auto;
+}
+.nightlife-search-heading{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color:inherit;
+}
+.marbot20{
+    margin-bottom: 20px;
+}
+
+.nightlife-single-detail{
+    position: relative;
+    margin-bottom: 30px;
+}
+.single-club-button{
+    padding: 10px;
+}
+.single-club-button button{
+    font-size: 10px;
+    color: #fff;
+    padding:6px 20px;
+}
+.single-club-information .pull-left{
+    padding:10px;
+    width: 60%;
+}
+.single-club-information .pull-left h4{
+    margin-top: 0;
+}
+.single-club-information .pull-left h4, .single-club-information .pull-left p{
+    margin-bottom: 5px;
+}
+.act-desc{
+  width: 50%;
+}
+/* Blogs Page Styling */
+#blog-main-content{
+    background: #ecebeb;
+}
+.blog-heading{
+    margin-bottom: 30px;
+}
+.blog-top{
+    padding: 10px;
+    background: #ed1c24;
+    color: #fff;
+}
+.blog-top h4{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.blog-top p{
+    margin-bottom: 0;
+    font-size: 12px;
+}
+.blog-description{
+    background: #fff;
+    padding: 20px;
+}
+.single-blog{
+    margin-bottom: 30px;
+    max-height: 600px;
+}
+.single-blog-inner{
+    margin-bottom: 30px;
+}
+.sblog-description{
+    background: #fff;
+    float:left;
+    width: 100%;
+}
+.single-blog-description{
+    border-bottom: 1px solid #ecebeb;
+    padding: 20px;
+}
+.single-blog-description p{
+    margin-bottom: 0;
+}
+.blog-top h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.blog-author{
+    padding:20px;
+}
+.blog-author span{
+    color: #ed1c24;
+}
+.single-blog-button button{
+    width: 135px;
+}
+.single-blog-button .btn-white{
+    background: #fff;
+    color: #333;
+}
+/* Dj's */
+.dj-button{
+    padding-top: 30px;
+}
+.dj-button .btn-primary{
+    width: 165px;
+    border-radius: 0;
+}
+.dj-button .btn-white{
+    width: 165px;
+    background: #fff;
+    color: #333;
+    border-radius: 0;
+    margin-left: -3px;
+}
+.dj-detail{
+    margin-top: 30px;
+}
+.dj-detail .hover-effect:hover .movie-description{
+    opacity: 1;
+}
+.dj-detail .movie-description{
+    width: 87%;
+    padding:10px;
+}
+.single-dj{
+    margin-bottom: 15px;
+    padding:0 7px;
+}
+.single-dj img{
+  height: 305px;
+    width: 230px;
+}
+/* Login Page */
+label {
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+.bg-grey{
+    background: #f1f1f1;
+}
+.login-page .container-fluid{
+    padding: 0;
+}
+.main-content{
+    float: left;
+    width: 100%;
+}
+.login-form{
+    width: 550px;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    margin-top: 35px;
+    border-radius: 3px;
+}
+.login-form .submit-button{
+    padding: 5px 15px;
+}
+.login-form .signup{
+    margin-top: 10px;
+}
+.login-form .form-group{
+    margin-bottom:20px;
+}
+.signup-form .login{
+    margin-top: 10px;
+}
+.jq-ry-normal-group .jq-ry-group{
+    display: none !important;
+}
+/* Bhanja Styling 25-07-16 */
+.img_loader{
+  margin: auto;
+  height: 550px;
+}
+.router-place{
+  min-height: 800px;
+  float: left;
+  width: 100%;
+}
+.router-loading img{
+  margin: auto;
+  margin-top: 300px;
+}
+.center-modal{
+  width: 100%;
+  left: 0;
+}
+.center-modal .modal-dialog{
+  width: 75%;
+  margin-left: 15%;
+}
+.center-modal .modal-body{
+  min-width: 997px;
+}
+.detail-pop-up .modal-body{
+  min-width: 997px;
+}
+.my-movie-margin{
+  width: 230px;
+  margin: 0 6px;
+  margin-bottom: 40px;
+  float: left;
+}
+.filter .input-here input{
+    color: #fff;
+}
+.info_content h3{
+    color: #000;
+    font-size: 20px;
+}
+.user-profile .movie-here{
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+}
+/* Login Pop Up Styling */
+.login-pop-up .modal-dialog{
+  margin-left: 67%;
+  margin-top: 7%;
+  float: left;
+}
+.login-pop-up .modal-content{
+  width: 450px;
+  float: left;
+}
+.login-pop-up .modal-body{
+  float: left;
+  width: 100%;
+}
+.login-pop-up .login-form{
+  width: 100%;
+  margin-top: 0;
+  float: left;
+}
+.login-pop-up .login-form h3{
+  color: #333;
+}
+.login-pop-up-reg .modal-dialog{
+    margin-top: 7%;
+    width: 450px;
+}
+.login-pop-up-reg .modal-content{
+    width: 450px;
+    float: left;
+}
+.login-pop-up-reg .modal-body{
+    float: left;
+    width: 100%;
+}
+.login-pop-up-reg .login-form{
+    width: 100%;
+    margin-top: 0;
+    float: left;
+}
+.login-pop-up-reg .login-form h3{
+    color: #333;
+}
+.user-input{
+  padding: 0;
+  margin-bottom: 20px;
+}
+.user-input input{
+  position: relative;
+  padding: 6px 30px;
+}
+.user-input i{
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  font-size: 16px;
+}
+.forgot-password{
+  float: left;
+  margin-top: 5px;
+}
+.login-password{
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.no-member{
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+.no-member p a{
+  color:#ed1c24;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.no-member p{
+  color:#ccc;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.social-button{
+  float: left;
+  width: 178px;
+  padding: 12px 10px;
+}
+.social-login{
+  padding: 0;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.facebook-button{
+  background:  #607CB7;
+  border: none;
+  color: #fff;
+}
+.facebook-button:hover{
+  color: #fff;
+}
+.google-button{
+  background: #D74937;
+  border: none;
+}
+.dob-input{
+  margin-left: 5px;
+}
+.dob-input input{
+    padding: 6px 8px;
+}
+.signup-input{
+  padding: 0;
+  margin-bottom: 20px;
+}
+.dob-lable{
+  margin-top: 10px;
+}
+.sign-last-text p{
+  text-transform: none;
+  color: #333;
+  font-weight: 500;
+  margin-top: 15px;
+  cursor: text;
+}
+.sign-last-text p span{
+  color: #ed1c24;
+}
+/* Responsive First slider styling */
+.responsemovies-slide img{
+  width: 100%;
+  height: 300px;
+}
+.responsive-slider-loader{
+  height: 100px;
+  width: 100%;
+}
+/*Event styling*/
+.single-event{
+    position: relative;
+}
+.single-event:hover .single-event-hover{
+    opacity: 1;
+}
+.single-event-hover{
+    position: absolute;
+    top: 0;
+    background: #fff;
+    height: 87%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0;
+    width: 100%;
+}
+.single-event-hover-text{
+    padding: 80px 10px 10px;
+    text-align: center;
+}
+.single-event-hover-icons{
+    padding: 10px 40px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+.single-event-hover-icon{
+    width: 35px;
+    height: 35px;
+    float: left;
+    background: #ccc;
+    border-radius: 20px;
+    margin: 0 5px 10px;
+}
+.single-event-hover-icon i{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+/* latest update */
+.single-event-last p{
+  color: #fff;
+  font-size: 18px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+.single-event-hover-icon:nth-child(4){
+    margin-left: 28px;
+}
+#nightlife-main-content{
+  padding: 0;
+}
+.nightlife-detail{
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+}
+.nightlife-single-detail{
+  padding: 0 7px;
+}
+.nightlife-single-detail img{
+  height: 190px;
+  width: 100%;
+}
+.single-club-information{
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    position: absolute;
+    bottom: 0%;
+}
+#nightlife-main-content .container{
+    width: 1349px;
+    padding: 0;
+}
+/* Event page last changes */
+#events .container{
+  padding: 0;
+}
+.blog-image img{
+  width: 1110px;
+  height:500px;
+}
+/* Single Blog styling */
+.comment{
+  width: 100%;
+  padding: 20px;
+  float: left;
+}
+.comment input{
+  width: 90%;
+  padding: 5px;
+}
+.comment button{
+  width: 9%;
+}
+.blog_comments{
+  padding: 20px;
+}
+.single_comment{
+  border-bottom: 1px solid #ecebeb;
+  margin-top: 10px;
+}
+.single_comment:nth-last-child(1){
+  border-bottom: none;
+}
+.single_comment p{
+  text-align: right;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.single_comment p:nth-child(1){
+  text-align: left;
+  font-size: 14px;
+}
+/* End Single blog styling */
+/* Bobby styling */
+
+.popup-body,
+.bbpopup-body{
+  background: #000;
+}
+.popup-body h3{
+  text-align: center;
+  margin-top: 15px;
+}
+img.blog_thumb{
+  width: 100%;
+  height: 320px;
+}
+/*
+Cinema Timing Modal
+*/
+.movie-timing button{
+  background: #770E12;
+  border: 0;
+  border-radius: 3px;
+  width: 25px;
+  height: 25px;
+}
+.movie-timing input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ed1c24;
+  background: transparent;
+}
+.cinema_select{
+    padding: 10px;
+    background-color: #ed1c24;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-color: #ed1c24;
+    margin-top: 10px;
+}
+.cinema_select:active{
+  border-color: #ed1c24;
+}
+.movie-timing{
+  margin-top: 10px;
+}
+.movie-timing p{
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+.cinema_list ul{
+  list-style-type: none;
+  padding: 0;
+    background: #ed1c24;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+.cinema_list ul li{
+  padding: 15px;
+  cursor: pointer;
+}
+.cinema_list ul li:hover{
+  background: #461012;
+}
+.movie-timing-header{
+  text-align: center;
+  padding-bottom: 10px;
+}
+img.timing-loader{
+  width: 100px;
+  margin: 0 auto;
+}
+.vid-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+.profile-vid i{
+      color: #FFF;
+    font-size: 100px;
+    position: absolute;
+    top: 40%;
+    left: 46%;
+}
+.close-modal{
+  width: 20%;
+  float: right;
+}
+.close-modal button{
+  margin-top: 10px;
+}
+#signup-popup .close-modal button{
+  margin-top: 5px;
+}
+.detail-pop-up .closing-modal{
+  padding: 0 15px;
+}
+.detail-pop-up .closing-modal .close-modal button{
+  margin-top: 0;
+}
+/* End Bobby styling */
+.bs-icons i:nth-child(1), .bs-icons i:nth-child(2){
+  margin-right: 5px;
+}
+/* Responsive */
+
+@media (min-width:320px) and (max-width:479px) {
+/*  header responsive styling */
+  header{
+    height: 170px;
+    padding: 5px 10px;
+  }
+  .logo-img-place{
+    text-align: center;
+  }
+  .logo-img-place .logo{
+    float: none;
+  }
+  .logo-img-place .logo img{
+    display: inline-block;
+  }
+  .padrightzero{
+    padding-left: 0;
+  }
+  .login-btn{
+    margin-top: 10px;
+    position: relative;
+  }
+  .sign-up-text{
+    margin-top: 5px;
+  }
+  .login-pop-up{
+    height: 450px;
+    position: absolute;
+    top: 0px;
+  }
+  .login-pop-up .modal-dialog{
+    margin-left: 0;
+    width:100%;
+    margin-top: 0;
+  }
+  .login-pop-up .modal-content{
+    width: 100%;
+  }
+  .login-pop-up .modal-body{
+    padding:5px;
+  }
+  .login-pop-up .login-form{
+    padding: 10px;
+  }
+  .social-login{
+    float:left;
+  }
+  .social-button{
+    font-size: 11px;
+    text-align: left;
+    width: 134px;
+  }
+  .user-input{
+    float: left;
+    width: 100%;
+  }
+  .signup-input{
+    float: left;
+    width: 100%;
+  }
+  .dob-place{
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .dob-lable{
+    margin-top: 0;
+  }
+/* End header responsive styling */
+/* Menu bar responsive styling */
+#bs-example-navbar-collapse-1{
+  padding: 0;
+}
+.menu .navbar-nav>li{
+  width: 100%;
+}
+/* End menu responsive styling */
+/*Home page responsive styling */
+/* Detail modal pop up responsive styling */
+.detail-pop-up{
+  width: 100%;
+  left: 0;
+}
+.detail-pop-up .modal-dialog{
+  margin-left: 0;
+}
+.detail-pop-up .modal-body{
+  min-width: 100%;
+}
+.detail-pop-up .select-event-here{
+  float: left;
+  width: 100%;
+}
+.detail-pop-up .select-event-content{
+  float: left;
+  width: 100%;
+  border-left: none;
+}
+.detail-pop-up .select-event-simage{
+  float: left;
+  width: 25%;
+}
+.detail-pop-up .select-event-simage img{
+  width: 100%;
+}
+.detail-pop-up .select-event-button{
+  float: left;
+  width: 25%;
+}
+.detail-pop-up .navigated{
+  top: 50%;
+  height: 35px;
+  width: 20px;
+}
+.detail-pop-up .navigated i{
+  font-size: 22px;
+  margin-top: 30%;
+  margin-left: 38%;
+}
+.center-modal .modal-dialog, .center-modal .modal-content, .center-modal .modal-body{
+  width: 100%;
+}
+/* End Detail modal pop up responsive styling */
+/* First slider responsive styling */
+.movies-slide:first-child{
+  width: 100%;
+  height: 257.5px;
+}
+.movies-slide:nth-child(2), .movies-slide:nth-child(3){
+  width: 100%;
+}
+/* Movie Slider responsive styling */
+#movies .container{
+  width: 100%;
+}
+#movies .section-heading{
+  padding: 0 10px;
+}
+.movies-tabs{
+  padding: 0 20px;
+}
+.movies-tabs .nav-tabs>li>a{
+  font-size: 12px;
+}
+.latest-movies-slide{
+  width: 100%;
+}
+.event .item .latest-movies-slide:nth-child(1) img, .event .item .latest-movies-slide:nth-child(4) img, .event .item .latest-movies-slide:nth-child(7) img, .event .item .latest-movies-slide:nth-child(10) img{
+  width: 100%;
+}
+.latest-movies-slide img{
+  width: 100%;
+}
+.latest-left-icon{
+  left: 90%;
+}
+.go-single-movie{
+  padding: 6px 20px;
+  font-size: 14px;
+}
+/* End movie slider responsive styling */
+/* Event slider responsive styling */
+  #events .container{
+    width: 100%;
+  }
+  #events .container .section-heading{
+    padding: 0 10px 10px;
+  }
+  #events .movies-tabs{
+    padding: 0 15px;
+  }
+  #events .movies-tabs .nav-tabs>li{
+    margin-right: 5px;
+  }
+  #events .movies-tabs .nav-tabs>li>a{
+    font-size: 11px;
+  }
+  .event .item .latest-movies-slide:nth-child(1), .event .item .latest-movies-slide:nth-child(4), .event .item .latest-movies-slide:nth-child(7), .event .item .latest-movies-slide:nth-child(10){
+    width:100%;
+  }
+  #events .container button{
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+  #events .center-modal .modal-dialog, #events .center-modal .modal-content, #events .center-modal .modal-body{
+    width: 100%;
+    float: left;
+  }
+  #events .select-event-description{
+    width: 100%;
+  }
+  #events .select-event-description .btn-custom{
+    padding: 6px 20px;
+  }
+/* End event slider responsive styling */
+.explore-activities{
+  float: left;
+  width: 100%;
+}
+.explore-activities button{
+  font-size: 14px;
+}
+#video{
+  padding: 15px;
+}
+#video .container{
+  padding: 0;
+}
+.profile-vid{
+  height: 250px;
+}
+.profile-vid video{
+  width: 100%;
+  height: 250px;
+}
+.explore-nightlife{
+  float: left;
+  width: 100%;
+}
+.explore-nightlife .col-sm-6{
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+.explore-nightlife button{
+  width: 100%;
+  font-size: 14px;
+}
+#subscribe .container{
+  width: 100%;
+}
+#subscribe .col-sm-12{
+  padding: 0;
+}
+.subscribe-image{
+  text-align: center;
+}
+.subscribe-image img{
+  display: inline-block;
+}
+.subscribe-text{
+  padding: 0;
+}
+.subscribe-text .padding20{
+  padding: 10px;
+}
+.subscribe-text .padding20 p{
+  font-size: 14px;
+  line-height: 25px;
+}
+.subscribe-text .input-group{
+  padding: 10px;
+}
+.subscribe-text .input-group-btn .btn-primary{
+  padding: 6px 10px;
+}
+/* Movie trailer responsive styling */
+  .trailer-modal .modal-dialog{
+    width: 100%;
+    margin-top: 60%;
+  }
+  .trailer-modal .modal-content{
+    width: 100%;
+  }
+  .trailer-modal iframe{
+    height: 300px;
+  }
+/* End Movie trailer responsive styling */
+/* Activities section responsive styling */
+  #activities .movie-description, #nightlife .movie-description{
+    padding: 50px 20px;
+    margin: 5px;
+  }
+  #activities .movie-description .text-uppercase h3, #nightlife .movie-description .text-uppercase h3{
+    font-size: 18px;
+  }
+/* End Activities section responsive styling */
+/* Video section responsive styling */
+  img.vid-img{
+    width: 45px;
+  }
+/* End video section responsive styling */
+/*End Home page responsive styling*/
+.select-event-image img{
+  height: auto;
+}
+/* Movies page responsive styling */
+.movie-first-carousel .movie-slider-item:nth-child(1) .movies-slides, .movie-first-carousel .movie-slider-item:nth-child(4) .movies-slides, .movie-first-carousel .movie-slider-item:nth-child(7) .movies-slides{
+  width: 100%;
+  height: 257px;
+}
+.movie-first-carousel .movie-slider-item .movies-slides{
+  width: 100%;
+  height: 257px;
+}
+#main-content .filter, #main-content .all-movies, #main-content .cinema-display, #main-content .side-movie-inner, #main-content .cinema-display .slide-here{
+  float: left;
+  width: 100%;
+}
+#main-content .all-movies{
+  padding: 10px;
+}
+#main-content .all-movies .movies-tabs{
+  padding: 0;
+}
+#main-content .movie-here{
+  margin: 0;
+  width: 100%;
+}
+#main-content .my-movie-margin{
+  margin-bottom: 20px;
+}
+.video-place{
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  height: 40%;
+}
+.video-place img.play{
+  left: 43%;
+  top: 40%;
+}
+.video-place iframe{
+  width: 100%;
+  height: 250px;
+}
+.select-button{
+  float: left;
+  width: 100%;
+}
+/*End movie page responsive styling*/
+/* Event page responsive styling */
+.single-event-img img{
+  width: 100%;
+  height: 190px;
+}
+/* End event page responsive styling */
+/* Activities page responsive styling */
+  .act-desc{
+    width: 56%;
+  }
+  .act-desc h4{
+    font-size: 14px;
+  }
+  .act-desc p{
+    font-size: 12px;
+  }
+/* End Activities page responsive styling */
+/* Nightlife page responsive styling */
+#nightlife-main-content .container{
+  width: 100%;
+}
+.nightlife-content{
+  float: left;
+  width: 100%;
+}
+#nightlife-main-content .filter, #nightlife-main-content .all-movies, #nightlife-main-content .cinema-display, #nightlife-main-content .side-movie-inner, #nightlife-main-content .cinema-display .slide-here, #nightlife-main-content .container .col-sm-9.white-bg{
+  width: 100%;
+  float:left;
+}
+/* End nightlife page respinsive styling*/
+/* Dj page responsive styling */
+.single-dj img{
+  width: 100%;
+}
+.single-event-hover-icons{
+  padding: 10px 26%;
+}
+.single-event-hover-icon:nth-child(4){
+  margin-left: 5px;
+}
+/* End dj page responsive styling */
+/* Blog page responsive styling */
+.single-blog{
+  max-height: none;
+}
+/* End blog responsive styling */
+/* Single blog responsive styling */
+.blog-image img{
+  width: 100%;
+  height: auto;
+}
+.single-blog-inner{
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+.single-blog-button{
+  float: left;
+  width: 100%;
+}
+.single-blog-button button{
+  width: 125px;
+}
+.comment{
+  padding: 10px;
+}
+.comment input{
+  width: 100%;
+}
+.comment button{
+  width: 25%;
+  float: right;
+  margin-top: 10px;
+}
+/* End Single blog responsive styling */
+/* Single movie responsive styling */
+.movie-side-img{
+  margin-top: -70px;
+}
+.movie-side-img img{
+  width: 100%;
+}
+.single-movie-detail{
+  padding: 0;
+}
+.single-movie-detail .movie-content{
+  padding: 20px 0;
+}
+.single-movie-detail .movie-list-detail ul{
+  padding-left: 10px;
+}
+.img-link a{
+  padding: 20px;
+}
+.movie_trailer{
+  height: 500px;
+}
+img.trailer_thumb{
+  height: 500px;
+  margin-top: 0;
+}
+.movie-portion img.play{
+  width: 85px;
+  left: 39%;
+  top: 40%;
+}
+.movie-portion{
+  padding: 0;
+}
+.happen-detail{
+  margin-bottom: 20px;
+}
+/* End single movie responsive styling */
+/* other-services responsive styling*/
+#other-services .container{
+  width: 100%;
+}
+#other-services .marbot20.go-single-movie{
+  padding: 0;
+}
+/* Footer responsive styling*/
+.footer-logo{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-logo img{
+  display: inline-block;
+}
+.social-icon{
+  padding: 0;
+}
+.middle-icons{
+  padding: 0;
+  width: 100%;
+  margin: auto;
+}
+.copy-write{
+  float: left;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+/* Movie timing responsive styling */
+  .movie-timing{
+    margin-top: 30px;
+  }
+/* End Movie timing responsive styling */
+.img_loader{
+  height: 250px;
+}
+.profile-vid i{
+  font-size: 48px;
+}
+.single-events{
+  float:left;
+  width: 100%;
+}
+#signup-popup{
+  height: auto;
+}
+.movies-tabs .nav-tabs>li{
+  margin-right: 10px;
+}
+#activities .btn-custom, #nightlife .btn-custom{
+  margin-top: 15px;
+}
+}
+@media (min-width:480px) and (max-width:567px) {
+/*  header responsive styling */
+  header{
+    height: 170px;
+    padding: 5px 10px;
+  }
+  .logo-img-place{
+    text-align: center;
+  }
+  .logo-img-place .logo{
+    float: none;
+  }
+  .logo-img-place .logo img{
+    display: inline-block;
+  }
+  .padrightzero{
+    padding-left: 0;
+  }
+  .login-btn{
+    margin-top: 10px;
+    position: relative;
+  }
+  .sign-up-text{
+    margin-top: 5px;
+  }
+  .login-pop-up{
+    height: 450px;
+    position: absolute;
+    top: 35px;
+  }
+  .login-pop-up .modal-dialog{
+    margin-left: 0;
+    width:100%;
+  }
+  .login-pop-up .modal-content{
+    width: 100%;
+  }
+  .login-pop-up .modal-body{
+    padding:5px;
+  }
+  .login-pop-up .login-form{
+    padding: 10px;
+  }
+  .social-login{
+    float:left;
+  }
+  .social-button{
+    font-size: 11px;
+    text-align: left;
+    width: 134px;
+  }
+  .user-input{
+    float: left;
+    width: 100%;
+  }
+  .signup-input{
+    float: left;
+    width: 100%;
+  }
+  .dob-place{
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .dob-lable{
+    margin-top: 0;
+  }
+/* End header responsive styling */
+/* Menu bar responsive styling */
+#bs-example-navbar-collapse-1{
+  padding: 0;
+}
+.menu .navbar-nav>li{
+  width: 100%;
+}
+/* End menu responsive styling */
+/*Home page responsive styling */
+/* First slider responsive styling */
+.movies-slide:first-child{
+  width: 100%;
+  height: 257.5px;
+}
+.movies-slide:nth-child(2), .movies-slide:nth-child(3){
+  width: 100%;
+}
+/* Movie Slider responsive styling */
+#movies .container{
+  width: 100%;
+}
+#movies .section-heading{
+  padding: 0 10px;
+}
+.movies-tabs{
+  padding: 0 20px;
+}
+.movies-tabs .nav-tabs>li>a{
+  font-size: 12px;
+}
+.latest-movies-slide{
+  width: 100%;
+}
+.latest-movies-slide img{
+  width: 100%;
+}
+.latest-left-icon{
+  left: 90%;
+}
+.go-single-movie{
+  padding: 6px 20px;
+  font-size: 14px;
+}
+/* End movie slider responsive styling */
+/*Center-modal responsive styling*/
+/*#activities, #events, #nightlife{
+  position: relative;
+}
+.center-modal{
+  position: absolute;
+}
+.center-modal .modal-dialog{
+  margin-left: 0;
+  width: 100%;
+}
+.center-modal .modal-content{
+  width: 100%;
+}
+.center-modal .modal-body{
+  width: 100%;
+  min-width: 100%;
+}
+.center-modal .select-event-here{
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+.center-modal .select-event-content{
+  float: left;
+  width: 100%;
+}
+/* End center-modal responsive styling*/
+/* Detail modal pop up responsive styling */
+.detail-pop-up{
+  width: 100%;
+  left: 0;
+}
+.detail-pop-up .modal-dialog{
+  margin-left: 0;
+}
+.detail-pop-up .modal-body{
+  min-width: 100%;
+}
+.detail-pop-up .select-event-here{
+  float: left;
+  width: 100%;
+}
+.detail-pop-up .select-event-content{
+  float: left;
+  width: 100%;
+  border-left: none;
+}
+.detail-pop-up .select-event-simage{
+  float: left;
+  width: 25%;
+}
+.detail-pop-up .select-event-simage img{
+  width: 100%;
+}
+.detail-pop-up .select-event-button{
+  float: left;
+  width: 25%;
+}
+.detail-pop-up .navigated{
+  top: 50%;
+  height: 40px;
+  width: 30px;
+}
+.detail-pop-up .navigated i{
+  font-size: 32px;
+}
+/* End Detail modal pop up responsive styling */
+.explore-activities{
+  float: left;
+  width: 100%;
+}
+.explore-activities button{
+  font-size: 14px;
+}
+#video{
+  padding: 15px;
+}
+#video .container{
+  padding: 0;
+}
+.profile-vid{
+  height: 250px;
+}
+.profile-vid video{
+  width: 100%;
+  height: 250px;
+}
+.explore-nightlife{
+  float: left;
+  width: 100%;
+}
+.explore-nightlife .col-sm-6{
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+.explore-nightlife button{
+  width: 100%;
+  font-size: 14px;
+}
+#subscribe .container{
+  width: 100%;
+}
+#subscribe .col-sm-12{
+  padding: 0;
+}
+.subscribe-image{
+  text-align: center;
+}
+.subscribe-image img{
+  display: inline-block;
+}
+.subscribe-text{
+  padding: 0;
+}
+.subscribe-text .padding20{
+  padding: 10px;
+}
+.subscribe-text .padding20 p{
+  font-size: 14px;
+  line-height: 25px;
+}
+.subscribe-text .input-group{
+  padding: 10px;
+}
+.subscribe-text .input-group-btn .btn-primary{
+  padding: 6px 10px;
+}
+/*End Home page responsive styling*/
+.select-event-image img{
+  height: auto;
+}
+/* Movies page responsive styling */
+.movie-first-carousel .movie-slider-item:nth-child(1) .movies-slides, .movie-first-carousel .movie-slider-item:nth-child(4) .movies-slides, .movie-first-carousel .movie-slider-item:nth-child(7) .movies-slides{
+  width: 100%;
+  height: 257px;
+}
+.movie-first-carousel .movie-slider-item .movies-slides{
+  width: 100%;
+  height: 257px;
+}
+#main-content .filter, #main-content .all-movies, #main-content .cinema-display, #main-content .side-movie-inner, #main-content .cinema-display .slide-here{
+  float: left;
+  width: 100%;
+}
+#main-content .all-movies{
+  padding: 10px;
+}
+#main-content .all-movies .movies-tabs{
+  padding: 0;
+}
+#main-content .movie-here{
+  margin: 0;
+  width: 100%;
+}
+#main-content .my-movie-margin{
+  margin-bottom: 20px;
+}
+.video-place{
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+}
+.video-place iframe{
+  width: 100%;
+  height: 250px;
+}
+/*End movie page responsive styling*/
+/* Event page responsive styling */
+.single-event-img img{
+  width: 100%;
+  height: auto;
+}
+/* End event page responsive styling */
+/* Dj page responsive styling */
+.single-dj img{
+  width: 100%;
+}
+/* End dj page responsive styling */
+/* Single movie responsive styling */
+.movie-side-img{
+  margin-top: -70px;
+}
+.movie-side-img img{
+  width: 100%;
+}
+.single-movie-detail{
+  padding: 0;
+}
+.single-movie-detail .movie-content{
+  padding: 20px 0;
+}
+.single-movie-detail .movie-list-detail ul{
+  padding-left: 10px;
+}
+.img-link a{
+  padding: 20px;
+}
+/* End single movie responsive styling */
+/* other-services responsive styling*/
+#other-services .container{
+  width: 100%;
+}
+/* Footer responsive styling*/
+.footer-logo{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-logo img{
+  display: inline-block;
+}
+.social-icon{
+  padding: 0;
+}
+.middle-icons{
+  padding: 0;
+  width: 100%;
+  margin: auto;
+}
+.copy-write{
+  float: left;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+/* Movie timing responsive styling */
+  .movie-timing{
+    margin-top: 30px;
+  }
+/* End Movie timing responsive styling */
+.profile-vid i{
+  font-size: 48px;
+}
+}
+@media (min-width:568px) and (max-width:684px) {
+  /*  header responsive styling */
+    header{
+      height: 170px;
+      padding: 5px 10px;
+    }
+    .logo-img-place{
+      text-align: center;
+    }
+    .logo-img-place .logo{
+      float: none;
+    }
+    .logo-img-place .logo img{
+      display: inline-block;
+    }
+    .padrightzero{
+      padding-left: 0;
+    }
+    .login-btn{
+      margin-top: 10px;
+      position: relative;
+    }
+    .sign-up-text{
+      margin-top: 5px;
+    }
+    .login-pop-up{
+      height: 450px;
+      position: absolute;
+      top: 35px;
+    }
+    .login-pop-up .modal-dialog{
+      margin-left: 0;
+      width:100%;
+    }
+    .login-pop-up .modal-content{
+      width: 100%;
+    }
+    .login-pop-up .modal-body{
+      padding:5px;
+    }
+    .login-pop-up .login-form{
+      padding: 10px;
+    }
+    .social-login{
+      float:left;
+    }
+    .social-button{
+      font-size: 11px;
+      text-align: left;
+      width: 134px;
+    }
+    .user-input{
+      float: left;
+      width: 100%;
+    }
+    .signup-input{
+      float: left;
+      width: 100%;
+    }
+    .dob-place{
+      padding-left: 0;
+      margin-top: 0;
+    }
+    .dob-lable{
+      margin-top: 0;
+    }
+  /* End header responsive styling */
+  /* Menu bar responsive styling */
+  #bs-example-navbar-collapse-1{
+    padding: 0;
+  }
+  .menu .navbar-nav>li{
+    width: 100%;
+  }
+  /* End menu responsive styling */
+  /*Home page responsive styling */
+  /* First slider responsive styling */
+    .movies-slide:first-child{
+      width: 60%;
+      height: 460px;
+    }
+    .movies-slide:nth-child(2), .movies-slide:nth-child(3){
+      width: 40%;
+      height: 230px;
+    }
+    .movies-slide-caption{
+      padding: 10px;
+    }
+    /* Movie Slider responsive styling */
+    #movies .container{
+      width: 100%;
+    }
+    #movies .section-heading{
+      padding: 0 15px;
+    }
+    .movies-tabs{
+      padding: 0 10px;
+    }
+    .latest-movies-slide{
+      width: 115px;
+    }
+    .latest-movies-slide img{
+      width: 100%;
+      height: 180px
+    }
+    .latest-left-icon{
+      left: 95%;
+    }
+    .go-single-movie{
+      padding: 6px 20px;
+      font-size: 18px;
+    }
+    .movie-description{
+      padding: 5px;
+      margin: 5;
+      height: 98%;
+    }
+    .movie-desc-icons i.fa{
+      font-size: 10px;
+    }
+    .movie-desc-name, .movie-desc-genre, .movie-desc-cast{
+      font-size: 10px;
+    }
+    .movie-desc-view button{
+      font-size: 8px;
+      padding: 2px 10px;
+    }
+    /* End movie slider responsive styling */
+    /* Movie trailer responsive styling */
+      .trailer-modal .modal-content{
+        width: 100%;
+      }
+      .trailer-modal iframe{
+        height: 300px;
+      }
+    /* End Movie trailer responsive styling */
+    /* Detail modal pop up responsive styling */
+  .detail-pop-up{
+    width: 100%;
+    left: 0;
+  }
+  .detail-pop-up .modal-dialog{
+    margin-left: 0;
+    width: 80%;
+    margin: 65% auto;
+    float: none;
+  }
+  .detail-pop-up .modal-body{
+    min-width: 100%;
+  }
+  .detail-pop-up .select-event-description p{
+    font-size: 16px;
+  }
+  .detail-pop-up .select-event-here{
+    float: left;
+    width: 100%;
+  }
+  .detail-pop-up .select-event-simage{
+    width: 25%;
+    float: left;
+  }
+  .detail-pop-up .select-event-simage img{
+    width: 100%;
+  }
+  .detail-pop-up .select-event-button{
+    width: 25%;
+    float: left;
+  }
+  .detail-pop-up .select-event-button button{
+    height: 80px;
+  }
+  .detail-pop-up .navigated{
+    top: 50%;
+    height: 40px;
+    width: 30px;
+  }
+  .detail-pop-up .navigated i{
+    font-size: 32px;
+  }
+  .detail-pop-up .select-event-description .col-sm-12.padding0{
+    width: 100%;
+    float: left;
+    padding: 15px;
+  }
+  /* End Detail modal pop up responsive styling */
+  /* Event slider responsive styling */
+    #events .container{
+      width: 100%;
+      padding: 10px;
+    }
+    .event .item .latest-movies-slide:nth-child(1), .event .item .latest-movies-slide:nth-child(4), .event .item .latest-movies-slide:nth-child(7), .event .item .latest-movies-slide:nth-child(10){
+      width: 330px;
+    }
+    .event .item .latest-movies-slide:nth-child(1) img, .event .item .latest-movies-slide:nth-child(4) img, .event .item .latest-movies-slide:nth-child(7) img, .event .item .latest-movies-slide:nth-child(10) img{
+      width: 100%;
+    }
+  /* End event slider responsive styling */
+  .explore-activities{
+    float: left;
+    width: 100%;
+  }
+  .explore-activities button{
+    font-size: 18px;
+  }
+  #video{
+    padding: 15px;
+  }
+  #video .container{
+    padding: 0;
+  }
+  .profile-vid{
+    height: 250px;
+  }
+  .profile-vid video{
+    width: 100%;
+    height: 250px;
+  }
+  .explore-nightlife{
+    float: left;
+    width: 100%;
+  }
+  .explore-nightlife .col-sm-6{
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .explore-nightlife button{
+    width: 100%;
+    font-size: 18px;
+  }
+  #subscribe .container{
+    width: 100%;
+  }
+  #subscribe .col-sm-12{
+    padding: 0;
+  }
+  .subscribe-image{
+    text-align: center;
+  }
+  .subscribe-image img{
+    display: inline-block;
+  }
+  .subscribe-text{
+    padding: 0;
+  }
+  .subscribe-text .padding20{
+    padding: 10px;
+  }
+  .subscribe-text .padding20 p{
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .subscribe-text .input-group{
+    padding: 10px;
+  }
+  .subscribe-text .input-group-btn .btn-primary{
+    padding: 6px 10px;
+  }
+  .profile-vid .vid-img{
+    width: 45px;
+  }
+  /*End Home page responsive styling*/
+  /* Movies page responsive styling */
+  .movie-first-carousel .movie-slider-item:nth-child(1) .movies-slides, .movie-first-carousel .movie-slider-item:nth-child(4) .movies-slides, .movie-first-carousel .movie-slider-item:nth-child(7) .movies-slides{
+    width: 60%;
+    height: 460px;
+  }
+  .movie-first-carousel .movie-slider-item .movies-slides{
+    width: 40%;
+    height: 230px;
+  }
+  #main-content .filter, #main-content .all-movies, #main-content .cinema-display, #main-content .side-movie-inner, #main-content .cinema-display .slide-here{
+    float: left;
+    width: 100%;
+  }
+  #main-content .all-movies{
+    padding: 10px;
+  }
+  #main-content .all-movies .movies-tabs{
+    padding: 0;
+  }
+  #main-content .movie-here{
+    margin: 0;
+    width: 25%;
+  }
+  #main-content .my-movie-margin{
+    margin-bottom: 20px;
+    padding: 0 7px;
+  }
+  .my-movie-margin .latest-movies-slide{
+    width: 130px;
+  }
+  .video-place{
+    width: 47%;
+    height: 150px;
+  }
+  .video-place img.play{
+    top: 40%;
+    left: 43%;
+  }
+  .video-place iframe{
+    width: 100%;
+    height: 250px;
+  }
+  .select-button{
+    float:left;
+    width: 100%;
+  }
+  /*End movie page responsive styling*/
+  /* Event Page responsive styling */
+  #slider .movies-slide-caption .pull-left{
+    width: 70%;
+  }
+  #slider .movies-slide-caption .pull-left h4{
+    font-size: 16px;
+  }
+  .single-event-here{
+    width: 33%;
+    float: left;
+  }
+  .single-event-detail{
+    height: 200px;
+  }
+  .single-event-hover-icons{
+    padding: 10px 20px;
+  }
+  .single-event-hover{
+    height: 90%;
+  }
+  /* End event page responsive styling */
+  /* Activity page responsive styling */
+  .single-club-information .pull-left h4{
+    font-size: 14px;
+  }
+  .single-club-information .pull-left p{
+    font-size: 12px;
+  }
+  /* End Activity page responsive styling */
+  /* Nightlife page responsive styling */
+  #nightlife-main-content .container{
+    width: 100%;
+  }
+  .nightlife-content{
+    float: left;
+    width: 100%;
+  }
+  #nightlife-main-content .filter, #nightlife-main-content .all-movies, #nightlife-main-content .cinema-display, #nightlife-main-content .side-movie-inner, #nightlife-main-content .cinema-display .slide-here, #nightlife-main-content .col-sm-9.white-bg{
+    width: 100%;
+    float:left;
+  }
+  .nightlife-single-detail{
+    float: left;
+    width: 49%;
+  }
+  /* End Nightlife page responsive styling */
+  /* Dj page responsive styling */
+  .single-dj{
+    width: 33%;
+    float: left;
+  }
+  /* End dj page responsive styling */
+  /* Blog page responsive styling */
+  .single-blog{
+    width: 50%;
+    float: left;
+    height: 700px;
+    max-height: 700px;
+  }
+  /*Blog page responsive styling */
+  /* Single blog responsive styling */
+  .blog-image img{
+    width: 100%;
+    height: auto;
+  }
+  .single-blog-inner{
+    float: left;
+    width: 100%;
+    padding: 0;
+  }
+  .single-blog-button{
+    float: left;
+    width: 100%;
+  }
+  .single-blog-button button{
+    width: 125px;
+  }
+  .comment{
+    padding: 10px;
+  }
+  .comment input{
+    width: 100%;
+  }
+  .comment button{
+    width: 25%;
+    float: right;
+    margin-top: 10px;
+  }
+  /* End Single blog responsive styling */
+  /* Single movie responsive styling */
+  .movie-side-img{
+    margin-top: -70px;
+    text-align: center;
+  }
+  .movie-side-img img{
+    width: 70%;
+    display: inline-block;
+  }
+  .movie-detail-slider{
+    padding: 30px 90px;
+  }
+  .single-movie-detail{
+    padding: 30px;
+  }
+  .single-movie-detail .movie-content{
+    padding: 20px 0;
+  }
+  .single-movie-detail .movie-list-detail ul{
+    padding-left: 10px;
+  }
+  .happen-detail{
+    margin-bottom: 30px;
+  }
+  .happen-img img{
+    width: 100%;
+  }
+  .img-link a{
+    padding: 20px;
+  }
+  .movie-portion{
+    padding: 0;
+  }
+  .movie_trailer{
+    height: 500px;
+  }
+  img.trailer_thumb{
+    height: 100%;
+    margin-top: 0;
+  }
+  .movie-portion img.play{
+    width: 85px;
+    left: 43%;
+    top: 43%;
+  }
+  /* End single movie responsive styling */
+  /* other-services responsive styling*/
+  #other-services .container{
+    width: 100%;
+  }
+  #other-services .container .col-sm-4{
+    width: 33%;
+    float: left;
+  }
+  #other-services a{
+    font-size: 16px;
+    padding: 0;
+  }
+  /* Footer responsive styling*/
+  .footer-logo{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-logo img{
+    display: inline-block;
+  }
+  .social-icon{
+    padding: 0;
+  }
+  .middle-icons{
+    padding: 0;
+    width: 50%;
+    margin: auto;
+  }
+  .copy-write{
+    float: left;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  /* Movie timing responsive styling */
+    .movie-timing{
+      margin-top: 30px;
+    }
+  /* End Movie timing responsive styling */
+  .img_loader{
+    height: 350px;
+  }
+  .profile-vid i{
+  font-size: 68px;
+}
+}
+@media (min-width:685px) and (max-width:767px) {
+  /*  header responsive styling */
+    header{
+      height: 170px;
+      padding: 5px 10px;
+    }
+    .logo-img-place{
+      text-align: center;
+    }
+    .logo-img-place .logo{
+      float: none;
+    }
+    .logo-img-place .logo img{
+      display: inline-block;
+    }
+    .padrightzero{
+      padding-left: 0;
+    }
+    .login-btn{
+      margin-top: 10px;
+      position: relative;
+    }
+    .sign-up-text{
+      margin-top: 5px;
+    }
+    .login-pop-up{
+      height: 450px;
+      position: absolute;
+      top: 35px;
+    }
+    .login-pop-up .modal-dialog{
+      margin-left: 0;
+      width:100%;
+    }
+    .login-pop-up .modal-content{
+      width: 100%;
+    }
+    .login-pop-up .modal-body{
+      padding:5px;
+    }
+    .login-pop-up .login-form{
+      padding: 10px;
+    }
+    .social-login{
+      float:left;
+    }
+    .social-button{
+      font-size: 11px;
+      text-align: left;
+      width: 134px;
+    }
+    .user-input{
+      float: left;
+      width: 100%;
+    }
+    .signup-input{
+      float: left;
+      width: 100%;
+    }
+    .dob-place{
+      padding-left: 0;
+      margin-top: 0;
+    }
+    .dob-lable{
+      margin-top: 0;
+    }
+  /* End header responsive styling */
+  /* Menu bar responsive styling */
+  #bs-example-navbar-collapse-1{
+    padding: 0;
+  }
+  .menu .navbar-nav>li{
+    width: 100%;
+  }
+  /* End menu responsive styling */
+  /*Home page responsive styling */
+  /* Movies page responsive styling */
+  .movie-first-carousel .movie-slider-item:nth-child(1) .movies-slides, .movie-first-carousel .movie-slider-item:nth-child(4) .movies-slides, .movie-first-carousel .movie-slider-item:nth-child(7) .movies-slides{
+    width: 60%;
+    height: 460px;
+  }
+  .movie-first-carousel .movie-slider-item .movies-slides{
+    width: 40%;
+    height: 230px;
+  }
+  #main-content .filter, #main-content .all-movies, #main-content .cinema-display, #main-content .side-movie-inner, #main-content .cinema-display .slide-here{
+    float: left;
+    width: 100%;
+  }
+  #main-content .all-movies{
+    padding: 10px;
+  }
+  #main-content .all-movies .movies-tabs{
+    padding: 0;
+  }
+  #main-content .movie-here{
+    margin: 0;
+    width: 25%;
+  }
+  #main-content .my-movie-margin{
+    margin-bottom: 20px;
+    padding: 0 7px;
+  }
+  .my-movie-margin .latest-movies-slide{
+    width: 130px;
+  }
+  .video-place{
+    width: 47%;
+  }
+  .video-place iframe{
+    width: 100%;
+    height: 250px;
+  }
+  /*End movie page responsive styling*/
+  /* First slider responsive styling */
+    .movies-slide:first-child{
+      width: 60%;
+      height: 460px;
+    }
+    .movies-slide:nth-child(2), .movies-slide:nth-child(3){
+      width: 40%;
+      height: 230px;
+    }
+    .movies-slide-caption{
+      padding: 10px;
+    }
+    /* Movie Slider responsive styling */
+    #movies .container{
+      width: 100%;
+    }
+    #movies .section-heading{
+      padding: 0 15px;
+    }
+    .movies-tabs{
+      padding: 0 10px;
+    }
+    .latest-movies-slide{
+      width: 115px;
+    }
+    .latest-movies-slide img{
+      width: 100%;
+      height: 180px
+    }
+    .latest-left-icon{
+      left: 95%;
+    }
+    .go-single-movie{
+      padding: 6px 20px;
+      font-size: 18px;
+    }
+    /* End movie slider responsive styling */
+  /*Center-modal responsive styling*/
+  /*#activities, #events, #nightlife{
+    position: relative;
+  }
+  .center-modal{
+    position: absolute;
+  }
+  .center-modal .modal-dialog{
+    margin-left: 0;
+    width: 100%;
+  }
+  .center-modal .modal-content{
+    width: 100%;
+  }
+  .center-modal .modal-body{
+    width: 100%;
+    min-width: 100%;
+  }
+  .center-modal .select-event-here{
+    padding: 0;
+    float: left;
+    width: 100%;
+  }
+  .center-modal .select-event-content{
+    float: left;
+    width: 100%;
+  }
+  /* End center-modal responsive styling*/
+  /* Detail modal pop up responsive styling */
+  .detail-pop-up{
+    width: 100%;
+    left: 0;
+  }
+  .detail-pop-up .modal-dialog{
+    margin-left: 0;
+    width: 80%;
+    margin: 80px auto;
+    float: none;
+  }
+  .detail-pop-up .modal-body{
+    min-width: 100%;
+  }
+  .detail-pop-up .select-event-description p{
+    font-size: 16px;
+  }
+  .detail-pop-up .select-event-here{
+    float: left;
+    width: 100%;
+  }
+  .detail-pop-up .select-event-simage{
+    width: 25%;
+    float: left;
+  }
+  .detail-pop-up .select-event-simage img{
+    width: 100%;
+  }
+  .detail-pop-up .select-event-button{
+    width: 25%;
+    float: left;
+  }
+  .detail-pop-up .select-event-button button{
+    height: 80px;
+  }
+  .detail-pop-up .navigated{
+    top: 50%;
+    height: 40px;
+    width: 20px;
+  }
+  .detail-pop-up .navigated i{
+    font-size: 32px;
+  }
+  /* End Detail modal pop up responsive styling */
+  .explore-activities{
+    float: left;
+    width: 100%;
+  }
+  .explore-activities button{
+    font-size: 18px;
+  }
+  #video{
+    padding: 15px;
+  }
+  #video .container{
+    padding: 0;
+  }
+  .profile-vid{
+    height: 250px;
+  }
+  .profile-vid video{
+    width: 100%;
+    height: 250px;
+  }
+  .explore-nightlife{
+    float: left;
+    width: 100%;
+  }
+  .explore-nightlife .col-sm-6{
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .explore-nightlife button{
+    width: 100%;
+    font-size: 18px;
+  }
+  #subscribe .container{
+    width: 100%;
+  }
+  #subscribe .col-sm-12{
+    padding: 0;
+  }
+  .subscribe-image{
+    text-align: center;
+  }
+  .subscribe-image img{
+    display: inline-block;
+  }
+  .subscribe-text{
+    padding: 0;
+  }
+  .subscribe-text .padding20{
+    padding: 10px;
+  }
+  .subscribe-text .padding20 p{
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .subscribe-text .input-group{
+    padding: 10px;
+  }
+  .subscribe-text .input-group-btn .btn-primary{
+    padding: 6px 10px;
+  }
+  /*End Home page responsive styling*/
+  /* Event Page responsive styling */
+  #slider .movies-slide-caption .pull-left{
+    width: 70%;
+  }
+  .single-event-here{
+    width: 33%;
+    float: left;
+  }
+  .single-event-detail{
+    height: 170px;
+  }
+  /* End event page responsive styling */
+  /* Nightlife page responsive styling */
+  #nightlife-main-content .container{
+    width: 100%;
+  }
+  .nightlife-content{
+    float: left;
+    width: 100%;
+  }
+  #nightlife-main-content .filter, #nightlife-main-content .all-movies, #nightlife-main-content .cinema-display, #nightlife-main-content .side-movie-inner, #nightlife-main-content .cinema-display .slide-here{
+    width: 100%;
+    float:left;
+  }
+  #nightlife-main-content .filter, #nightlife-main-content .all-movies, #nightlife-main-content .cinema-display, #nightlife-main-content .side-movie-inner, #nightlife-main-content .cinema-display .slide-here{
+    width: 100%;
+    float: left;
+  }
+  .nightlife-single-detail{
+    float: left;
+    width: 49%;
+  }
+  /* End Nightlife page responsive styling */
+  /* Blog page responsive styling */
+  .single-blog{
+    width: 50%;
+    float: left;
+    height: 580px;
+  }
+  /*Blog page responsive styling */
+  /* Single movie responsive styling */
+  .movie-side-img{
+    margin-top: -70px;
+    text-align: center;
+  }
+  .movie-side-img img{
+    width: 70%;
+    display: inline-block;
+  }
+  .movie-detail-slider{
+    padding: 30px 90px;
+  }
+  .single-movie-detail{
+    padding: 30px;
+  }
+  .single-movie-detail .movie-content{
+    padding: 20px 0;
+  }
+  .single-movie-detail .movie-list-detail ul{
+    padding-left: 10px;
+  }
+  .happen-detail{
+    margin-bottom: 30px;
+  }
+  .happen-img img{
+    width: 100%;
+  }
+  .img-link a{
+    padding: 20px;
+  }
+  /* End single movie responsive styling */
+  /* other-services responsive styling*/
+  #other-services .container{
+    width: 100%;
+  }
+  #other-services .container .col-sm-4{
+    width: 33%;
+    float: left;
+  }
+  #other-services a{
+    font-size: 16px;
+  }
+  /* Footer responsive styling*/
+  .footer-logo{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-logo img{
+    display: inline-block;
+  }
+  .social-icon{
+    padding: 0;
+  }
+  .middle-icons{
+    padding: 0;
+    width: 50%;
+    margin: auto;
+  }
+  .copy-write{
+    float: left;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (min-width:768px) and (max-width:991px) {
+/* Header responsive styling */
+  header{
+    height: 95px;
+    padding: 10px 15px;
+  }
+  .search-signin .col-sm-9.padrightzero{
+    padding-left: 0;
+  }
+  .input-group-btn button{
+    font-size: 10px;
+    padding: 9px 10px;
+  }
+  .login-btn .sign-up-text{
+    margin-top: 5px;
+  }
+/* Menu responsive styling */
+  .menu .navbar-nav>li>a{
+    font-size: 14px;
+  }
+/* Home Page Styling */
+  /* Movie Slider responsive styling */
+  #movies .container{
+    width: 100%;
+  }
+  #movies .section-heading{
+    padding: 0 15px;
+  }
+  .movies-tabs{
+    padding: 0 20px;
+  }
+  .latest-movies-slide{
+    width: 145px;
+  }
+  .latest-movies-slide img{
+    width: 100%;
+    height: 240px
+  }
+  .latest-left-icon{
+    left: 96%;
+  }
+  .go-single-movie{
+    padding: 6px 20px;
+    font-size: 24px;
+  }
+  .movie-description{
+    padding: 5px;
+    margin: 5;
+    height: 98%;
+  }
+  .movie-desc-icons i.fa{
+    font-size: 10px;
+  }
+  .movie-desc-name, .movie-desc-genre, .movie-desc-cast{
+    font-size: 10px;
+  }
+  .movie-desc-view button{
+    font-size: 8px;
+    padding: 2px 10px;
+  }
+  /* Movie trailer responsive styling */
+    .trailer-modal .modal-content{
+      width: 100%;
+    }
+    .detail-pop-up{
+      width: 100%;
+      left: 0;
+    }
+    .detail-pop-up .modal-dialog{
+      margin-left: 0;
+      width: 80%;
+      margin: 65% auto;
+      float: none;
+    }
+  /* End Movie trailer responsive styling */
+  /* End movie slider responsive styling */
+  /* Event slider responsive styling */
+  #events .container{
+    width: 100%;
+    padding: 10px;
+  }
+  .event .item .latest-movies-slide:nth-child(1), .event .item .latest-movies-slide:nth-child(4), .event .item .latest-movies-slide:nth-child(7), .event .item .latest-movies-slide:nth-child(10){
+    width: 418px;
+  }
+  .event .item .latest-movies-slide:nth-child(1) img, .event .item .latest-movies-slide:nth-child(4) img, .event .item .latest-movies-slide:nth-child(7) img, .event .item .latest-movies-slide:nth-child(10) img{
+    width: 100%;
+  }
+  /* End slider responsive styling */
+  /* Movie page responsive styling */
+  #main-content .filter{
+    padding: 10px;
+  }
+  #main-content .latest-left-icon{
+    left: 94%;
+  }
+  #main-content .movie-here{
+    width: 47%;
+  }
+  #main-content .latest-movies-slide{
+    width: 100%;
+  }
+  #main-content .latest-movies-slide img{
+    width: 100%;
+  }
+  #main-content .video-place{
+    width: 47%;
+    height: 150px;
+  }
+  .video-place img.play{
+    left: 43%;
+    top: 40%;
+  }
+  #main-content .video-place iframe{
+    width: 100%;
+    height: 200px;
+  }
+  /* End movie page responsive styling */
+  /* Event Page responsive styling */
+  .single-event-here{
+    width: 33%;
+  }
+  .single-event-detail{
+    height: 200px;
+  }
+  .single-event-date{
+    width: 50px;
+    height: 60px;
+  }
+  .single-event-date h2{
+    font-size: 34px;
+  }
+  .single-event-hover{
+    height: 90%;
+  }
+  .single-event-hover-icons{
+    padding: 10px 12px;
+  }
+  /* End event page responsive styling */
+  /* Detail modal pop up responsive styling */
+  .detail-pop-up .modal-dialog{
+    width: 100%;
+  }
+  .detail-pop-up .modal-body{
+    min-width: 100%;
+  }
+  .detail-pop-up .select-event-here{
+    float: left;
+    width: 100%;
+  }
+  .detail-pop-up .select-event-content{
+    width: 40%;
+  }
+  .detail-pop-up .select-event-button button{
+    height: 35px;
+  }
+  .detail-pop-up .select-event-button button .show-more{
+    font-size: 10px;
+  }
+  .detail-pop-up .navigated{
+    height: 50px;
+    width: 25px;
+  }
+  .detail-pop-up .navigated i{
+    font-size: 39px;
+  }
+  /* End Detail modal pop up responsive styling */
+  /* Nightlife page responsive styling */
+  #nightlife-main-content .container{
+    width: 100%;
+  }
+  #nightlife-main-content .filter{
+    padding: 10px;
+  }
+  .nightlife-single-detail img{
+    height: 170px;
+  }
+  .single-club-information{
+    width: 93%;
+  }
+  .single-club-information .pull-left{
+    padding: 5px;
+  }
+  .single-club-information .pull-left h4{
+    font-size: 10px;
+  }
+  .single-club-information .pull-left p{
+    font-size: 8px;
+  }
+  .single-club-button{
+    padding: 05px 05px 0px 05px;
+  }
+  .single-club-button button{
+    font-size: 8px;
+    padding: 6px 12px;
+  }
+  /* End nightlife page responsive styling */
+  /* Dj page responsive styling */
+  .single-dj{
+    width: 33%;
+  }
+  /* End dj responsive styling */
+  /* Blog page responsive styling */
+  .single-blog{
+    height: 750px;
+    max-height: 750px;
+  }
+  /* End Blog page responsive styling */
+  /* Single movie responsive styling */
+  .single-movie-cast{
+    width: 38%;
+  }
+  .single-movie-detail{
+    width: 62%;
+  }
+  .img-link a{
+    padding: 20px;
+  }
+  .movie-portion img.play{
+    width: 100px;
+    right: 40%;
+  }
+  /* End single movie responsive styling*/
+  /* Single blog responsive styling */
+  .comment input{
+    width: 85%;
+  }
+  .comment button{
+    width: 14%;
+  }
+  /* End single blog responsive styling */
+  .explore-nightlife .col-sm-6 button{
+    width: 330px;
+    font-size: 20px;
+  }
+  .explore-activities button{
+    font-size: 20px;
+  }
+  #video{
+    padding: 20px;
+  }
+  #video .container{
+    width: 100%;
+  }
+  .profile-vid video{
+    width: 100%;
+  }
+/* subscribe responsive styling */
+  #subscribe .container{
+    width: 100%;
+  }
+  .subscribe-image img{
+    margin-top: 22px;
+  }
+/* other-services responsive styling */
+  #other-services a{
+    font-size: 18px;
+    padding: 0;
+  }
+/* Footer responsive styling */
+  .social-icon{
+    padding: 0;
+  }
+  .middle-icons{
+    padding-left: 0;
+  }
+  .social-icon .icons{
+    margin-right: 7px;
+    margin-left: 6px;
+  }
+  .slide-here .side-movie-inner{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .movies-slide-caption .pull-left{
+    width: 78%;
+  }
+  .movies-slide-caption{
+    padding: 18px 10px;
+  }
+  /* Movie timing responsive styling */
+    .pop-up .modal-content{
+      width: 90%;
+    }
+  /* End Movie timing responsive styling */
+}
+@media (min-width:992px) and (max-width:1024px) {
+  /* Header responsive styling */
+    header{
+      height: 95px;
+      padding: 10px 15px;
+    }
+    .search-signin .col-sm-9.padrightzero{
+      padding-left: 0;
+    }
+    .input-group-btn button{
+      font-size: 10px;
+      padding: 9px 10px;
+    }
+    .login-btn .sign-up-text{
+      margin-top: 5px;
+    }
+  /* Menu responsive styling */
+    .menu .navbar-nav>li>a{
+      font-size: 14px;
+    }
+  /* Home Page Styling */
+    /* Movie Slider responsive styling */
+    #movies .container{
+      width: 100%;
+    }
+    #movies .section-heading{
+      padding: 0 15px;
+    }
+    .movies-tabs{
+      padding: 0 20px;
+    }
+    .latest-movies-slide{
+      width: 195px;
+    }
+    .latest-movies-slide img{
+      width: 100%;
+      height: 280px
+    }
+    .latest-left-icon{
+      left: 96%;
+    }
+    .go-single-movie{
+      padding: 6px 20px;
+      font-size: 24px;
+    }
+    .movie-description{
+      padding: 5px;
+      margin: 5;
+      height: 98%;
+    }
+    .movie-desc-icons i.fa{
+      font-size: 10px;
+    }
+    .movie-desc-name, .movie-desc-genre, .movie-desc-cast{
+      font-size: 10px;
+    }
+    .movie-desc-view button{
+      font-size: 8px;
+      padding: 2px 10px;
+    }
+    /* Movie trailer responsive styling */
+      .trailer-modal .modal-content{
+        width: 100%;
+      }
+      .detail-pop-up{
+        width: 100%;
+        left: 0;
+      }
+      .detail-pop-up .modal-dialog{
+        margin-left: 0;
+        width: 80%;
+        margin: 15% auto;
+        float: none;
+      }
+    /* End Movie trailer responsive styling */
+    /* End movie slider responsive styling */
+    /* Event slider responsive styling */
+    #events .container{
+      width: 100%;
+      padding: 10px;
+    }
+    .event .item .latest-movies-slide:nth-child(1), .event .item .latest-movies-slide:nth-child(4), .event .item .latest-movies-slide:nth-child(7), .event .item .latest-movies-slide:nth-child(10){
+      width: 570px;
+    }
+    .event .item .latest-movies-slide:nth-child(1) img, .event .item .latest-movies-slide:nth-child(4) img, .event .item .latest-movies-slide:nth-child(7) img, .event .item .latest-movies-slide:nth-child(10) img{
+      width: 100%;
+    }
+    /* End slider responsive styling */
+    /* Movie page responsive styling */
+    #main-content .filter{
+      padding: 10px;
+    }
+    #main-content .latest-left-icon{
+      left: 94%;
+    }
+    #main-content .movie-here{
+      width: 47%;
+    }
+    #main-content .latest-movies-slide{
+      width: 100%;
+    }
+    #main-content .latest-movies-slide img{
+      width: 100%;
+    }
+    #main-content .video-place{
+      width: 47%;
+      height: 205px;
+    }
+    .video-place img.play{
+      left: 43%;
+      top: 40%;
+    }
+    #main-content .video-place iframe{
+      width: 100%;
+      height: 200px;
+    }
+    /* End movie page responsive styling */
+    /* Event Page responsive styling */
+    .single-event-here{
+      width: 33%;
+    }
+    .single-event-detail{
+      height: 200px;
+    }
+    .single-event-date{
+      width: 50px;
+      height: 60px;
+    }
+    .single-event-date h2{
+      font-size: 34px;
+    }
+    .single-event-hover{
+      height: 90%;
+    }
+    .single-event-hover-icons{
+      padding: 10px 43px;
+    }
+    /* End event page responsive styling */
+    /* Detail modal pop up responsive styling */
+    .detail-pop-up .modal-dialog{
+      width: 100%;
+    }
+    .detail-pop-up .modal-body{
+      min-width: 100%;
+    }
+    .detail-pop-up .select-event-here{
+      float: left;
+      width: 100%;
+    }
+    .detail-pop-up .select-event-content{
+      width: 40%;
+    }
+    .detail-pop-up .select-event-button button{
+      height: 35px;
+    }
+    .detail-pop-up .select-event-button button .show-more{
+      font-size: 10px;
+    }
+    .detail-pop-up .navigated{
+      height: 50px;
+      width: 25px;
+    }
+    .detail-pop-up .navigated i{
+      font-size: 39px;
+    }
+    /* End Detail modal pop up responsive styling */
+    /* Nightlife page responsive styling */
+    #nightlife-main-content .container{
+      width: 100%;
+    }
+    #nightlife-main-content .filter{
+      padding: 10px;
+    }
+    .nightlife-single-detail img{
+      height: 170px;
+    }
+    .single-club-information{
+      width: 93%;
+    }
+    .single-club-information .pull-left{
+      padding: 5px;
+    }
+    .single-club-information .pull-left h4{
+      font-size: 10px;
+    }
+    .single-club-information .pull-left p{
+      font-size: 8px;
+    }
+    .single-club-button{
+      padding: 05px 05px 0px 05px;
+    }
+    .single-club-button button{
+      font-size: 8px;
+      padding: 6px 12px;
+    }
+    /* End nightlife page responsive styling */
+    /* Dj page responsive styling */
+    .single-dj{
+      width: 33%;
+    }
+    /* End dj responsive styling */
+    /* Blog page responsive styling */
+    .single-blog{
+      height: 650px;
+      max-height: 650px;
+    }
+    /* End Blog page responsive styling */
+    /* Single movie responsive styling */
+    .single-movie-cast{
+      width: 38%;
+    }
+    .single-movie-detail{
+      width: 62%;
+    }
+    .img-link a{
+      padding: 20px;
+    }
+    .movie-portion img.play{
+      width: 100px;
+      right: 40%;
+    }
+    /* End single movie responsive styling*/
+    /* Single blog responsive styling */
+    .comment input{
+      width: 85%;
+    }
+    .comment button{
+      width: 14%;
+    }
+    /* End single blog responsive styling */
+    .explore-nightlife .col-sm-6 button{
+      width: 330px;
+      font-size: 20px;
+    }
+    .explore-activities button{
+      font-size: 20px;
+    }
+    #video{
+      padding: 20px;
+    }
+    #video .container{
+      width: 100%;
+    }
+    .profile-vid video{
+      width: 100%;
+    }
+  /* subscribe responsive styling */
+    #subscribe .container{
+      width: 100%;
+    }
+    .subscribe-image img{
+      margin-top: 22px;
+    }
+  /* other-services responsive styling */
+    #other-services a{
+      font-size: 18px;
+      padding: 0;
+    }
+  /* Footer responsive styling */
+    .social-icon{
+      padding: 0;
+    }
+    .middle-icons{
+      padding-left: 0;
+    }
+    .social-icon .icons{
+      margin-right: 7px;
+      margin-left: 6px;
+    }
+    .slide-here .side-movie-inner{
+      float: left;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .movies-slide-caption .pull-left{
+      width: 78%;
+    }
+    .movies-slide-caption{
+      padding: 18px 10px;
+    }
+}
+event-slider .loader{
+  min-height: 220px!important;
+}
+event-slider .loader h4{
+  padding-top: 100px!important;
+}

@@ -1,0 +1,14 @@
+<section id="nightlife">
+  <div class="container">
+    <section-head [head]='head' [icon]='icon'></section-head>
+    <bs-activity [url]='url' [modelId]='modelId' [singleUrl]='singleUrl' (singlePage)="goto($event)"></bs-activity>
+    <div class="col-sm-12 padding0 explore-nightlife">
+      <div class="col-sm-6 padleft0 text-right">
+        <bs-button [btnText]='leftBtn'></bs-button>
+      </div>
+      <div class="col-sm-6 padright0 text-left">
+        <bs-button [btnText]='rightBtn'></bs-button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<section id="other-services">
+  <div class="container">
+    <div class="col-sm-4 text-left">
+      <div *ngFor="let firstgroup of firstgroups">
+        <bs-foot [content]="firstgroup"></bs-foot>
+      </div>
+    </div>
+    <div class="col-sm-4 text-left">
+      <div *ngFor="let secondgroup of secondgroups">
+        <bs-foot [content]="secondgroup"></bs-foot>
+      </div>
+    </div>
+    <div class="col-sm-4 text-left">
+      <div *ngFor="let thirdgroup of thirdgroups">
+        <bs-foot [content]="thirdgroup"></bs-foot>
+      </div>
+    </div>
+  </div>
+</section>

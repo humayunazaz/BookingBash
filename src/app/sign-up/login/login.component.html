@@ -1,0 +1,82 @@
+<form [formGroup]='loginForm' (ngSubmit)="onSubmit()">
+  <div class="col-sm-12 social-login">
+    <a class="facebook-button social-button" href="http://bookingbash.com/server/wp-content/themes/starter-kit-contribute/login.php"><i class="fa fa-facebook"></i> Log in with Facebook</a>
+    <button class="google-button social-button"><i class="fa fa-google-plus"></i> Log in with Google</button>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-12 user-input">
+          <input
+            id="username"
+            placeholder="USERNAME"
+            type="text"
+            class="form-control input-md border-blue"
+            formControlName='username'>
+          <i class="fa fa-user"></i>
+      </div>
+      <div *ngIf="loginForm.controls.username.touched && loginForm.controls.username.errors">
+        <div class='alert alert-danger error-here' *ngIf="loginForm.controls.username.errors.required">
+          <p>Please insert the username.</p>
+        </div>
+        <div class='alert alert-danger error-here' *ngIf="loginForm.controls.username.errors.minlength">
+          <p>The username must have {{loginForm.controls.username.errors.minlength.requiredLength}} characters.</p>
+        </div>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-12 user-input">
+          <input
+            id="password"
+            placeholder="PASSWORD"
+            type="password"
+            class="form-control input-md border-blue"
+            formControlName='password'>
+          <i class="fa fa-unlock-alt"></i>
+      </div>
+      <div *ngIf="loginForm.controls.password.touched && loginForm.controls.password.errors">
+        <div class='alert alert-danger error-here' *ngIf="loginForm.controls.password.errors.required">
+          <p>Please insert the password.</p>
+        </div>
+        <div class='alert alert-danger error-here' *ngIf="loginForm.controls.password.errors.minlength">
+          <p>The Password must be {{loginForm.controls.password.errors.minlength.requiredLength}} characters.</p>
+        </div>
+      </div>
+  </div>
+  <div class="text-center login-password">
+      <div class="text-left forgot-password">
+        <a (click)="recover = true">Forgot Password ?</a>
+      </div>
+      <div class="text-right">
+        <button  type="submit" class="text-uppercase btn btn-primary submit-button" [disabled]="!loginForm.valid">login</button>
+      </div>
+  </div>
+</form>
+<form [formGroup]='recoverForm' (ngSubmit)='onRecover()' *ngIf="recover">
+  <div class="recover-email">
+    <div class="form-group">
+        <div class="col-sm-12 user-input">
+            <input
+              id="recover-email"
+              placeholder="ENTER YOUR EMAIL ADDRESS"
+              type="email"
+              class="form-control input-md border-blue"
+              formControlName='email'
+              >
+            <i class="fa fa-envelope"></i>
+        </div>
+        <div *ngIf="recoverForm.controls.email.touched && recoverForm.controls.email.errors">
+          <div class='alert alert-danger error-here' *ngIf="recoverForm.controls.email.errors.required">
+            <p>Please insert the email.</p>
+          </div>
+          <div class='alert alert-danger error-here' *ngIf="recoverForm.controls.email.errors.emailValid">
+            <p>Please insert the correct email.</p>
+          </div>
+        </div>
+        <div class="recoveryMessage">
+          <p>{{message}}</p>
+        </div>
+    </div>
+    <div class="text-right">
+        <button type="submit" class="text-uppercase btn btn-primary recover-button" [disabled]="!recoverForm.valid">Recover</button>
+    </div>
+  </div>
+</form>

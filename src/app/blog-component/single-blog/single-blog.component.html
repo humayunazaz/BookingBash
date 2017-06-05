@@ -1,0 +1,40 @@
+<main-slider [url]='mainSliderUrl'></main-slider>
+<section id="blog-main-content">
+    <div class="container">
+      <bs-loader [isLoading]='isLoading' [error]='error'></bs-loader>
+        <div class="col-sm-12 single-blog-inner" *ngIf="!isLoading && !error">
+            <div class="blog-top">
+                <h3>{{singleBlog.title}}</h3>
+                <p><i class="fa fa-map-marker"></i> {{singleBlog.custom_fields.location}}</p>
+            </div>
+            <div class="blog-image">
+                <img src="{{singleBlog.custom_fields.poster}}" class="img-responsive">
+            </div>
+            <div class="sblog-description">
+                <div class="single-blog-description">
+                    <p>{{singleDescription}}</p>
+                </div>
+                <div class="blog-author">
+                    <p>By <span>Booking Bash.</span> Date: <span>{{singleDate}}</span></p>
+                </div>
+                <div class="blog_comments">
+                    <div *ngFor="let comment of singleBlog.comments" class="single_comment">
+                        <p [innerHTML]='comment.content'></p>
+                        <p>Published on: {{comment.date}}</p>
+                        <p *ngIf="comment.author">Author: {{comment.author.name}}</p>
+                        <p *ngIf="!comment.author">Author: Anonymous</p>
+                    </div>
+                </div>
+                <!-- <div class="comment" *ngIf="user_id">
+                    <input type="text" class="comment_input" value="" placeholder="Add Your Comment..." [(ngModel)]="comment">
+                    <button type="button" class="btn btn-primary" value="submit" (click)="submit_comment(comment)">Submit</button>
+                </div> -->
+                <!-- <p *ngIf="!user_id" style="font-weight: bold; text-align: right; margin-right: 10px">Please login to add your comment.</p> -->
+            </div>
+        </div>
+        <div class="col-sm-12 single-blog-button text-right">
+            <button class="btn btn-white" type="button" (click)="gotoSingleBlog(prevId)" [disabled]="prevId == undefined">Previous</button>
+            <button class="btn btn-primary" type="button" (click)="gotoSingleBlog(nextId)" [disabled]="nextId == undefined">Next</button>
+        </div>
+    </div>
+</section>

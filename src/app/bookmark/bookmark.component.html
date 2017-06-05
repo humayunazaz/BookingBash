@@ -1,0 +1,8 @@
+<i class="fa fa-heart"
+  [ngClass]="{
+    bookmark : !liked,
+    'un-bookmark' : liked,
+    pending: loading
+  }"
+  (click)="like()"
+></i>

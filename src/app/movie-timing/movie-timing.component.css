@@ -1,0 +1,48 @@
+.cinema-name{
+  text-align: left;
+  padding: 5px;
+  background: #000;
+}
+.filter-here{
+  float: left;
+  width: 100%;
+}
+.form-group.myDrop{
+  float: left;
+  width: 50%;
+}
+.modal-content{
+  float: left;
+  width: 100%;
+}
+.modal-body{
+  float: left;
+  width: 100%;
+  padding: 15px 70px;
+}
+.shows-detail{
+  float: left;
+  width: 100%;
+}
+.singleShow{
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.singleShow ul{
+  padding: 0;
+}
+.filter-error{
+  text-align: center;
+}
+@media (min-width:320px) and (max-width:567px) {
+  .modal-dialog{
+    width: 95%;
+  }
+  .modal-body{
+    padding: 15px 0;
+  }
+  .singleShow{
+    width: 100%;
+  }
+}

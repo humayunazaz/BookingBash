@@ -1,0 +1,13 @@
+<div class="col-sm-4 single-blog">
+  <div class="blog-top">
+      <h4>{{blog.title}}</h4>
+      <p><i class="fa fa-map-marker"></i> {{blog.custom_fields.location}}</p>
+  </div>
+  <div class="blog-image">
+      <img src="{{blog.custom_fields.poster}}" class="img-responsive blog_thumb">
+  </div>
+  <div class="blog-description">
+      <p [innerHTML]='blog.excerpt'></p>
+      <button class="btn btn-primary" type="button" (click)="gotoSingleBlog(blog)">Read More</button>
+  </div>
+</div>

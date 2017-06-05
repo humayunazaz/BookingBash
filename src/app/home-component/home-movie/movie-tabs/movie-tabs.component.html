@@ -1,0 +1,38 @@
+<div class="movies-tabs">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" *ngFor="let tabsHead of tabsHeads"
+      [ngClass]="{
+        active: clickedTab == tabsHead.title
+      }"
+    >
+      <a
+      data-toggle="tab"
+      aria-controls="tabsHead.title"
+      role="tab"
+      href="#{{tabsHead.id}}"
+      (click)="clicked(tabsHead)"
+      >{{tabsHead.title}}
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane" role="tabpanel" *ngFor="let tabsHead of tabsHeads"
+      [ngClass]="{
+        active: clickedTab == tabsHead.title
+      }"
+      id="{{tabsHead.id}}"
+    >
+        <movie-slider
+          [url]=tabsHead.url
+          [innerItem]=tabsHead.innerItem
+          [btnText]='btnText'
+          [modelId]='tabsHead.modelId'
+          [moviePageSlider]='tabsHead.moviePageSlider'
+          (updateId)="movieId($event)"
+          [carouselId]="tabsHead.title"
+          >
+        </movie-slider>
+    </div>
+  </div>
+</div>
+<movie-timing [movieContent]='movieContent' [title]='movieTitle' [id]="cinemaId" [loading]='timingLoading'></movie-timing>

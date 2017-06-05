@@ -1,0 +1,74 @@
+<div id="{{carouselId}}" class="carousel slide latest-movie" data-ride="carousel" *ngIf="width > 480">
+  <bs-loader [isLoading]='isLoading' [error]='error'></bs-loader>
+  <div class="carousel-inner" role="listbox" *ngIf="!isLoading">
+    <div class="item active">
+      <div *ngFor="let firstSlide of firstSlides"
+      [ngClass]="{
+        'my-movie-margin' : moviePageSlider && firstSlide.thumbnail_images.medium
+      }"
+      >
+        <div class="latest-movies-slide hover-effect" *ngIf="firstSlide.thumbnail_images.medium">
+          <bs-movie
+            [Smovie]='firstSlide'
+            [btnText]='btnText'
+            (modelContent)='modelContent($event)'
+            [modelId]='modelId'
+            (movieId)="movieOpen($event)"
+            ></bs-movie>
+        </div>
+        <div class="col-sm-12 padding0 select-button" *ngIf="moviePageSlider && firstSlide.thumbnail_images.medium">
+          <button type="button" class="btn btn-primary red-button" (click)="clicked(firstSlide.slug)">SELECT</button>
+        </div>
+      </div>
+    </div>
+    <div class="item" *ngIf="secondSlides.length > 0">
+        <div class="latest-movies-slide hover-effect" *ngFor="let secondSlide of secondSlides">
+          <bs-movie [Smovie]='secondSlide' [btnText]='btnText' (modelContent)='modelContent($event)' [modelId]='modelId'></bs-movie>
+        </div>
+        <div class="col-sm-12 padding0 select-button" *ngIf="moviePageSlider && secondSlide.thumbnail_images.medium">
+          <button type="button" class="btn btn-primary red-button" (click)="clicked(secondSlide.slug)">SELECT</button>
+        </div>
+    </div>
+  </div>
+  <a class="left carousel-control latest-left-icon" [href]="'#' + carouselId" role="button" data-slide="prev" *ngIf="secondSlides.length > 0">
+      <span class="fa fa-angle-left" aria-hidden="true"></span>
+  </a>
+  <a class="right carousel-control latest-right-icon" [href]="'#' + carouselId" role="button" data-slide="next" *ngIf="secondSlides.length > 0">
+      <span class="fa fa-angle-right" aria-hidden="true"></span>
+  </a>
+</div>
+<div id="{{carouselId}}" class="carousel slide latest-movie" data-ride="carousel" *ngIf="width <= 480">
+  <bs-loader [isLoading]='isLoading' [error]='error'></bs-loader>
+  <div class="carousel-inner" role="listbox" *ngIf="!isLoading">
+    <div class="item active" *ngFor="let firstSlide of responsiveContent; let i=index;"
+      [ngClass]="{
+        active : i == 0
+      }"
+    >
+      <div
+      [ngClass]="{
+        'my-movie-margin' : moviePageSlider && firstSlide.thumbnail_images.medium
+      }"
+      >
+        <div class="latest-movies-slide hover-effect" *ngIf="firstSlide.thumbnail_images.medium">
+          <bs-movie
+            [Smovie]='firstSlide'
+            [btnText]='btnText'
+            (modelContent)='modelContent($event)'
+            [modelId]='modelId'
+            (movieId)="movieOpen($event)"
+            ></bs-movie>
+        </div>
+        <div class="col-sm-12 padding0 select-button" *ngIf="moviePageSlider && firstSlide.thumbnail_images.medium">
+          <button type="button" class="btn btn-primary red-button" (click)="clicked(firstSlide.slug)">SELECT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control latest-left-icon" [href]="'#' + carouselId" role="button" data-slide="prev" *ngIf="responsiveContent.length > 1">
+      <span class="fa fa-angle-left" aria-hidden="true"></span>
+  </a>
+  <a class="right carousel-control latest-right-icon" [href]="'#' + carouselId" role="button" data-slide="next" *ngIf="responsiveContent.length > 1">
+      <span class="fa fa-angle-right" aria-hidden="true"></span>
+  </a>
+</div>

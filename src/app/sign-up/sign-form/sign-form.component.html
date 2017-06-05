@@ -1,0 +1,110 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+      <div class="col-sm-12 signup-input">
+          <input
+            id="username"
+            placeholder="Full Name"
+            type="text"
+            class="form-control input-md border-blue"
+            formControlName='username'
+            >
+      </div>
+      <div *ngIf="signupForm.controls.username.pending" class="alert alert-warning error-here">The email is checking</div>
+      <div *ngIf="signupForm.controls.username.touched && signupForm.controls.username.errors">
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.username.errors.required">
+          <p>Please insert the username.</p>
+        </div>
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.username.errors.minlength">
+          <p>The username must have {{signupForm.controls.username.errors.minlength.requiredLength}} characters.</p>
+        </div>
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.username.errors.userexisit">
+          <p>The username is already exist.</p>
+        </div>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-12 signup-input">
+          <input
+            id="email"
+            placeholder="Email"
+            type="email"
+            class="form-control input-md border-blue"
+            formControlName='email'>
+      </div>
+      <div *ngIf="signupForm.controls.email.pending" class="alert alert-warning error-here">The email is checking</div>
+      <div *ngIf="signupForm.controls.email.touched && signupForm.controls.email.errors">
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.email.errors.required">
+          <p>Please insert the email.</p>
+        </div>
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.email.errors.emailValid">
+          <p>Please insert the correct email.</p>
+        </div>
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.email.errors.emailexisit">
+          <p>The email is already exist.</p>
+        </div>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-12 signup-input">
+          <input
+            id="password"
+            placeholder="Password"
+            type="password"
+            class="form-control input-md border-blue"
+            formControlName='password'>
+      </div>
+      <div *ngIf="signupForm.controls.password.touched && signupForm.controls.password.errors">
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.password.errors.required">
+          <p>Please insert the password.</p>
+        </div>
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.password.errors.minlength">
+          <p>The Password must be {{signupForm.controls.password.errors.minlength.requiredLength}} characters.</p>
+        </div>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-12 signup-input">
+        <div class="col-sm-5 text-left">
+          <label class="control-label dob-lable" for="textinput">Date of Birth</label>
+        </div>
+        <div class="col-sm-2 padding0 dob-input">
+          <input id="dob" placeholder="Day" class="form-control input-md border-blue" formControlName='day'>
+        </div>
+        <div class="col-sm-2 padding0 dob-input">
+          <input id="dob" placeholder="Month" class="form-control input-md border-blue" formControlName='month'>
+        </div>
+        <div class="col-sm-2 padding0 dob-input">
+          <input id="dob" placeholder="Year" class="form-control input-md border-blue" formControlName='year'>
+        </div>
+      </div>
+      <div *ngIf="signupForm.controls.day.touched && signupForm.controls.day.errors">
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.day.errors.dayValid">
+          <p>Please insert the right day.</p>
+        </div>
+      </div>
+      <div *ngIf="signupForm.controls.month.touched && signupForm.controls.month.errors">
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.month.errors.monthValid">
+          <p>Please insert the right month.</p>
+        </div>
+      </div>
+      <div *ngIf="signupForm.controls.year.touched && signupForm.controls.year.errors">
+        <div class='alert alert-danger error-here' *ngIf="signupForm.controls.year.errors.yearValid">
+          <p>Please insert the right year.</p>
+        </div>
+      </div>
+  </div>
+  <div class="form-group">
+      <div clas="col-sm-12">
+          <input
+            id="phone"
+            placeholder="Phone Number (optional)"
+            type="text"
+            class="form-control input-md border-blue"
+            formControlName='phone'
+            >
+      </div>
+  </div>
+  <div class="text-center">
+      <button  type="submit" class="text-uppercase btn btn-primary submit-button" [disabled]="!signupForm.valid">sign up</button>
+  </div>
+</form>

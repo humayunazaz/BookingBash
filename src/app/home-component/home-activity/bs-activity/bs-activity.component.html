@@ -1,0 +1,20 @@
+<div class="col-sm-12 padding0 marbot30">
+  <bs-loader [isLoading]='isLoading' [error]='error'></bs-loader>
+  <div *ngIf="!isLoading && !error">
+    <div class="col-sm-6 pull-left martop30" *ngFor="let content of sortActivitys">
+      <bs-act [content]='content' [modelId]='modelId' (modelContent)="modelContent($event)" (lora)="goto($event)"></bs-act>
+    </div>
+  </div>
+</div>
+<activity-modal
+[modelId]='modelId'
+[modalContent]='modalContent'
+[modalGallery]='modalGallery'
+[modelTitle]='modelTitle'
+[modelImg]='modelImg'
+[prevId]='prevId'
+[nextId]='nextId'
+(Idmodel)="myModel($event)"
+[isLoading]='isLoading'
+[error]='error'
+></activity-modal>

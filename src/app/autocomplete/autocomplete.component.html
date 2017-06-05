@@ -1,0 +1,15 @@
+<input
+  id="country"
+  class="form-control"
+  type="text"
+  placeholder="Events, Activities, Movies, Clubs"
+  [(ngModel)]="query"
+  (keyup)="filter()"
+  >
+  <div class="search-result" *ngIf="filteredList.length > 0">
+      <ul *ngFor="let item of filteredList" >
+          <li >
+              <a (click)="gotoSingle(item)">{{item.title}}</a>
+          </li>
+      </ul>
+  </div>

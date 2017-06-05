@@ -1,0 +1,63 @@
+<bs-loader [isLoading]="isLoading" [error]='error'></bs-loader>
+<div id="event-slider" class="carousel slide event latest-movie" data-ride="carousel" *ngIf="!isLoading">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="latest-movies-slide hover-effect" *ngFor="let firstSlide of firstSlides" let i = "index">
+              <img *ngIf="i == 0 || i == 3" src="{{resizer}}{{firstSlide.thumbnail_images.full.url}}">
+              <img *ngIf="i == 1 || i == 2 || i == 4 || i == 5" src="{{resizer}}{{firstSlide.thumbnail_images.medium.url}}">
+              <div class="movie-description">
+                  <div class="movie-desc-date text-uppercase">
+                      {{firstSlide.custom_fields.date}}
+                  </div>
+                  <div class="movie-desc-name text-uppercase">
+                      {{firstSlide.title}} at {{firstSlide.custom_fields.location}}
+                  </div>
+                  <!--<div class="movie-desc-icons">
+                      <i class="fa fa-calendar-plus-o bookmark" [ngStyle]="{'display': userId && ((!todayevent.value.custom_fields.like_users) || (todayevent.value.custom_fields.like_users).toString().search(userId) == '-1') ? 'inline-block' : 'none'}"
+                          (click)="like(todayevent.value.id)"></i>
+                      <i class="fa fa-calendar-plus-o un-bookmark" [ngStyle]="{'display': userId && (todayevent.value.custom_fields.like_users) && (todayevent.value.custom_fields.like_users).toString().search(userId) != '-1' ? 'inline-block' : 'none'}"
+                          (click)="unlike(todayevent.value.id)"></i>
+                      <i class="fa fa-info-circle" data-toggle="modal" data-target="#showdetail" (click)="gotoSingleEvent(todayevent, 'today')"></i>
+                      <i class="fa fa-facebook" (click)="sharer('fb', todayevent.value.id)"></i>
+                      <i class="fa fa-twitter" (click)="sharer('tw', todayevent.value.id)"></i>
+                  </div>-->
+                  <div class="movie-desc-view">
+                      <bs-button [btnText]='btnText'></bs-button>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="item" *ngIf="secondSlides.length > 0">
+            <div class="latest-movies-slide hover-effect" *ngFor="let secondSlide of secondSlides" let i = "index">
+              <img *ngIf="i == 0 || i == 3" src="{{resizer}}{{secondSlide.thumbnail_images.full.url}}">
+              <img *ngIf="i == 1 || i == 2 || i == 4 || i == 5" src="{{resizer}}{{secondSlide.thumbnail_images.medium.url}}">
+              <div class="movie-description">
+                  <div class="movie-desc-date text-uppercase">
+                      {{secondSlide.custom_fields.date}}
+                  </div>
+                  <div class="movie-desc-name text-uppercase">
+                      {{secondSlide.title}} at {{secondSlide.custom_fields.location}}
+                  </div>
+                  <!--<div class="movie-desc-icons">
+                      <i class="fa fa-calendar-plus-o bookmark" [ngStyle]="{'display': userId && ((!todayevent.value.custom_fields.like_users) || (todayevent.value.custom_fields.like_users).toString().search(userId) == '-1') ? 'inline-block' : 'none'}"
+                          (click)="like(todayevent.value.id)"></i>
+                      <i class="fa fa-calendar-plus-o un-bookmark" [ngStyle]="{'display': userId && (todayevent.value.custom_fields.like_users) && (todayevent.value.custom_fields.like_users).toString().search(userId) != '-1' ? 'inline-block' : 'none'}"
+                          (click)="unlike(todayevent.value.id)"></i>
+                      <i class="fa fa-info-circle" data-toggle="modal" data-target="#showdetail" (click)="gotoSingleEvent(todayevent, 'today')"></i>
+                      <i class="fa fa-facebook" (click)="sharer('fb', todayevent.value.id)"></i>
+                      <i class="fa fa-twitter" (click)="sharer('tw', todayevent.value.id)"></i>
+                  </div>-->
+                  <div class="movie-desc-view">
+                      <bs-button [btnText]='btnText'></bs-button>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control latest-left-icon" href="#event-slider" role="button" data-slide="prev" *ngIf="secondSlides.length > 0">
+        <span class="fa fa-angle-left" aria-hidden="true"></span>
+    </a>
+    <a class="right carousel-control latest-right-icon" href="#event-slider" role="button" data-slide="next" *ngIf="secondSlides.length > 0">
+        <span class="fa fa-angle-right" aria-hidden="true"></span>
+    </a>
+</div>

@@ -1,0 +1,30 @@
+.form-here{
+  width: 60%;
+  margin: auto;
+  margin-top: 70px;
+}
+.myForm{
+  float: left;
+  width: 100%;
+  background: #fff;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.myForm h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.myForm .user-input input{
+  padding: 6px 15px;
+}
+.my-textarea textarea{
+  height: 142px;
+}
+button{
+  float: right;
+}
+.error-here{
+  float: left;
+  width: 100%;
+}

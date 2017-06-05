@@ -1,0 +1,47 @@
+<div (click)="clicked()">
+<main-slider [url]="mainSliderUrl"></main-slider>
+<section class="bg-dark-grey" id="main-content">
+  <div class="container">
+    <div class="col-sm-3 padding20 filter">
+      <bs-nav-menu
+      [filterInput]='filterInput'
+      [genre]='genre'
+      [url]='url'
+      [filterUrl]='filterUrl'
+      [genreUrl]='genreUrl'
+      (updateUrl)='updateUrl($event)'
+      (updateGenre)="updateGenre($event)"
+      ></bs-nav-menu>
+    </div>
+    <div class="col-sm-9 padding20 grey-bg all-movies">
+      <section-head [head]='head' [icon]='icon' [singlePage]='singlePage' (viewAll)='viewAll($event)'></section-head>
+      <div *ngIf="!newMaterial">
+        <movie-tabs [tabsHeads]="tabsHeads"></movie-tabs>
+      </div>
+      <div *ngIf="newMaterial">
+        <bs-loader [isLoading]='filterLoading' [error]='filterError'></bs-loader>
+        <div *ngIf="!filterLoading && !filterError" class="filter-area">
+          <div *ngFor = "let movie of filterMovies" class="my-movie-margin">
+            <div class="latest-movies-slide hover-effect" *ngIf="movie.thumbnail_images.medium">
+              <bs-movie
+                [Smovie]="movie"
+                [btnText]='btnText'
+                (modelContent)='modelContent($event)'
+                [modelId]='modelId'
+                (movieId)="movieOpen($event)"
+                >
+              </bs-movie>
+            </div>
+          </div>
+        </div>
+      </div>
+      <movie-trailor></movie-trailor>
+    </div>
+  </div>
+</section>
+<bs-other></bs-other>
+<bs-footer></bs-footer>
+<div *ngIf="newMaterial">
+  <movie-timing [movieContent]='moviemodalContent' [loading]='timingLoading' [title]='movieTitle' [id]="cinemaId"></movie-timing>
+</div>
+</div>

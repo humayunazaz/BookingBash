@@ -1,0 +1,8 @@
+.navigated i{
+    pointer-events: all;
+    opacity: 1;
+}
+.navigated.disabled i{
+    pointer-events: none;
+    opacity: 0.5;
+}

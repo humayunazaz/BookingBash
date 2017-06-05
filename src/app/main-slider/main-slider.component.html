@@ -1,0 +1,95 @@
+<section id="slider">
+  <bs-loader [isLoading]='isLoading' [error]='error'></bs-loader>
+  <div *ngIf="!isLoading">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" *ngIf="width > 480">
+      <div class="carousel-inner" role="listbox">
+          <div class="item active">
+              <div class="movies-slide" *ngFor="let movie of firstSlide">
+                  <div class="black-overlay"></div>
+                  <img src="{{movie.thumbnail_images.full.url}}" alt="">
+                  <div class="movies-slide-caption">
+                      <div class="pull-left">
+                          <h4 class="text-uppercase" (click)="clicked(movie)">{{movie.title}}</h4>
+                          <h5>{{movie.custom_fields.genre}}</h5>
+                      </div>
+                      <div class="pull-right movies-slide-rating">
+                          <span><i class="fa fa-star"></i> {{movie.custom_fields.rating}}</span>
+                      </div>
+                  </div>
+              </div>
+              <!--<div *ngIf="!firstslide">
+                  <img src="images/img_loader.gif" class="img-responsive img_loader">
+              </div>-->
+          </div>
+          <div class="item" *ngIf="secondSlide.length > 0">
+              <div class="movies-slide" *ngFor="let event of secondSlide">
+                  <div class="black-overlay"></div>
+                  <img src="{{event.thumbnail_images.full.url}}" alt="">
+                  <div class="movies-slide-caption">
+                      <div class="pull-left">
+                          <h4 class="text-uppercase" (click)="clicked(event)">{{event.title}}</h4>
+                          <h5>{{event.custom_fields.artist}}</h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="item" *ngIf="thirdSlide.length > 0">
+              <div class="movies-slide" *ngFor="let club of thirdSlide">
+                  <div class="black-overlay"></div>
+                  <img src="{{club.thumbnail_images.full.url}}" alt="">
+                  <div class="movies-slide-caption">
+                      <div class="pull-left">
+                          <h4 class="text-uppercase" (click)="clicked(club)">{{club.title}}</h4>
+                          <h5>{{club.custom_fields.artist}}</h5>
+                      </div>
+                      <div class="pull-right movies-slide-rating">
+                          <span><i class="fa fa-star"></i> {{club.custom_fields.rating}}</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" *ngIf="secondSlide.length > 0">
+          <span class="fa fa-chevron-circle-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" *ngIf="secondSlide.length > 0">
+          <span class="fa fa-chevron-circle-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" *ngIf="width <= 480">
+      <div class="carousel-inner" role="listbox">
+          <div class="item" *ngFor="let movie of responsiveContent; let i = index;"
+            [ngClass]="{
+              active: i == 0
+            }"
+          >
+              <div class="movies-slide">
+                  <div class="black-overlay"></div>
+                  <img src="{{movie.thumbnail_images.full.url}}" alt="">
+                  <div class="movies-slide-caption">
+                      <div class="pull-left">
+                          <h4 class="text-uppercase">{{movie.title}}</h4>
+                          <h5>{{movie.custom_fields.genre}}</h5>
+                      </div>
+                      <div class="pull-right movies-slide-rating">
+                          <span><i class="fa fa-star"></i> {{movie.custom_fields.rating}}</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" *ngIf="responsiveContent.length > 1">
+          <span class="fa fa-chevron-circle-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" *ngIf="responsiveContent.length > 1">
+          <span class="fa fa-chevron-circle-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>

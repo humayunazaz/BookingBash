@@ -1,0 +1,56 @@
+<div id="castCarousel" class="carousel slide vertical" *ngIf="content.length > 0">
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="slider-data float-width" *ngFor="let cast of first">
+                <div class="slider-side-img">
+                    <img src="{{cast.thumbnail_images.thumbnail.url}}" alt="#Img desc#">
+                </div>
+                <div class="person-content">
+                    <p>
+                        {{cast.title}}
+                        <br> Born: {{cast.custom_fields.date_of_birth | date:'dd MM yyyy'}}
+                        <br> {{cast.custom_fields.title}}
+                        <br> Height: {{cast.custom_fields.height}} m
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item" *ngIf="second.longth > 0">
+            <div class="slider-data float-width" *ngFor="let cast of second">
+              <div class="slider-side-img">
+                  <img src="{{cast.thumbnail_images.thumbnail.url}}" alt="#Img desc#">
+              </div>
+              <div class="person-content">
+                  <p>
+                      {{cast.title}}
+                      <br> Born: {{cast.custom_fields.date_of_birth | date:'yyyy'}}
+                      <br> {{cast.custom_fields.title}}
+                      <br> Height: {{cast.custom_fields.height}} m
+                  </p>
+              </div>
+            </div>
+        </div>
+        <!--<div class="item">
+          <div class="slider-data float-width" *ngFor="let castdata of castdatas; #i=index">
+            <div *ngIf="i == 8 || i == 9 || i == 10 || i == 11">
+              <div class="slider-side-img">
+                  <img src="{{resizer}}{{castdata.picture}}&width=130&height=115" alt="#Img desc#">
+              </div>
+              <div class="person-content">
+                  <p>
+                      {{castdata.name}}
+                      <br>
+                      Born: April 4, 1965
+                      <br>
+                      {{castdata.title}}
+                      <br>
+                      Height: {{castdata.height}} m
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <a class="bottom carousel-control" href="#castCarousel" data-slide="prev"><i class="fa fa-angle-down"></i></a>
+        <a class="top carousel-control" href="#castCarousel" data-slide="next"><i class="fa fa-angle-up"></i></a>
+    </div>
+</div>

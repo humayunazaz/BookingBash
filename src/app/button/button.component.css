@@ -1,0 +1,15 @@
+.red-button{
+  background-color: #ed1c24;
+  border-color: #ed1c24;
+}
+.red-button:hover, .red-button:focus{
+  background-color: rgb(218, 11, 11);
+  border-color: rgb(218, 11, 11);
+}
+@media (min-width:320px) and (max-width:479px) {
+  .btn-custom{
+    width: 100%;
+    font-size: 16px;
+    padding: 6px;
+  }
+}

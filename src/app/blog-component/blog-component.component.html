@@ -1,0 +1,14 @@
+<main-slider [url]="mainSliderUrl"></main-slider>
+<section id="blog-main-content">
+  <div class="container">
+    <h2 class="text-capitalize text-center blog-heading">Latest From blogs</h2>
+    <bs-loader [isLoading]='isLoading' [error]='error'></bs-loader>
+    <div *ngIf="!isLoading && !error">
+      <div *ngFor="let blog of blogs">
+        <bs-blog [blog]='blog'></bs-blog>
+      </div>
+    </div>
+  </div>
+</section>
+<bs-other></bs-other>
+<bs-footer></bs-footer>

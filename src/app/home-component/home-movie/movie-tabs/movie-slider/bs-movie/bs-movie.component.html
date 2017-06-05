@@ -1,0 +1,46 @@
+<img src="{{Smovie.custom_fields.poster}}">
+<div class="movie-description">
+    <div class="movie-desc-icons">
+      <div *ngIf="!profileView">
+        <i class="fa fa-film" data-toggle="modal" [attr.data-target]="'#' + modelId" (click)="open_popup(Smovie.custom_fields.trailer)"></i>
+        <i class="fa fa-info-circle" (click)="gotoSingle(Smovie)"></i>
+        <bookmark [content]='Smovie'></bookmark>
+        <sharer [id]='Smovie.slug' [share]='facebook'></sharer>
+        <sharer [id]='Smovie.slug' [content]='Smovie' [share]='twitter'></sharer>
+      </div>
+      <div *ngIf="profileView">
+        <bookmark [content]='Smovie'></bookmark>
+      </div>
+    </div>
+    <div *ngIf="!profileView">
+      <div class="movie-desc-rating">
+          <span><i class="fa fa-star"></i> {{Smovie.custom_fields.rating}}</span>
+      </div>
+      <div class="movie-desc-name text-uppercase">
+          <strong>{{Smovie.title}}</strong>
+      </div>
+      <div class="movie-desc-genre">
+          <strong>Genre</strong> {{Smovie.custom_fields.genre}}
+      </div>
+      <div class="movie-desc-cast">
+          <strong>Cast</strong> {{Smovie.custom_fields.cast}}
+      </div>
+    </div>
+    <div *ngIf="profileView">
+      <div class="movie-desc-name text-uppercase">
+          <strong>{{Smovie.title}}</strong>
+      </div>
+      <div class="movie-desc-plot">
+        <p>{{profilePost}}</p>
+      </div>
+    </div>
+    <div class="movie-desc-view">
+      <div *ngIf="!profileView">
+        <button class="btn btn-primary go-single-movie" data-target="#showtimings" data-toggle="modal" (click)="movieTiming(Smovie)">Time and Schedule</button>
+      </div>
+      <div *ngIf="profileView">
+        <button class="btn btn-primary" (click)="profileClick(Smovie)" *ngIf="Smovie.type=='movie'">View</button>
+        <button class="btn btn-primary" (click)="profileClick(Smovie)" *ngIf="Smovie.type!='movie'" data-toggle="modal" data-target="#activity">View</button>
+      </div>
+    </div>
+</div>
